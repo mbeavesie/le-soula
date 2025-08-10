@@ -1,5 +1,6 @@
 import winemakerImage from "@assets/6_1754836857771.png";
 import awardImage from "@assets/5_1754836929513.png";
+import revueImage from "@assets/Revue de vins_1754837341373.png";
 
 export const journalEntries = [
   {
@@ -29,7 +30,7 @@ export const journalEntries = [
     date: '2025-01-30'
   },
   {
-    img: 'https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+    img: revueImage,
     href: '#',
     en: {
       title: 'Spring in the high valleys',

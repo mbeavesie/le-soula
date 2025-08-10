@@ -30,7 +30,9 @@ function JournalCard({ entry }: JournalCardProps) {
           <img
             src={entry.img}
             alt={content.title}
-            className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105"
+            className={`w-full h-56 transition-transform duration-700 group-hover:scale-105 ${
+              entry.img.includes('Revue de vins') ? 'object-contain bg-white' : 'object-cover'
+            }`}
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
