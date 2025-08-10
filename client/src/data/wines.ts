@@ -30,21 +30,6 @@ export const wines = [
     }
   },
   {
-    slug: 'trigone',
-    img: 'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
-    tech: '#',
-    en: {
-      name: 'Trigone',
-      vintage: 'Lot XV',
-      note: 'Solera-style blend. Textural, savoury, persistent.'
-    },
-    fr: {
-      name: 'Trigone',
-      vintage: 'Lot XV',
-      note: 'Assemblage en solera. Texture, saveur, longueur.'
-    }
-  },
-  {
     slug: 'maceration',
     img: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
     tech: '#',
@@ -57,6 +42,21 @@ export const wines = [
       name: 'La Macération du Soula',
       vintage: '2022',
       note: 'Macération pelliculaire prolongée. Fermentation sauvage. Expression montagnarde à l\'état pur.'
+    }
+  },
+  {
+    slug: 'trigone',
+    img: 'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
+    tech: '#',
+    en: {
+      name: 'Trigone',
+      vintage: 'Lot XV',
+      note: 'Solera-style blend. Textural, savoury, persistent.'
+    },
+    fr: {
+      name: 'Trigone',
+      vintage: 'Lot XV',
+      note: 'Assemblage en solera. Texture, saveur, longueur.'
     }
   }
 ];
