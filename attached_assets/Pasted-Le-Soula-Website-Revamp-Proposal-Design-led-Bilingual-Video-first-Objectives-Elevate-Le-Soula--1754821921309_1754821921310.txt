@@ -1,0 +1,159 @@
+Le Soula — Website Revamp Proposal (Design-led, Bilingual, Video-first)
+Objectives
+Elevate Le Soula’s brand with a quiet-luxury look: minimal, confident, editorial.
+
+Mobile-first experience with a hero video masthead and refined motion.
+
+Bilingual (EN/FR) content with an instant toggle.
+
+Palette: rich honey yellow, white, black, soft grey.
+
+Contemporary, intelligent copy aimed at a savvy wine audience (no fluff).
+
+Lightweight stack that runs beautifully on Replit, with a path to CMS.
+
+Information Architecture
+Home
+
+Hero: full-bleed video, positioning line, primary/secondary CTAs.
+
+Wines: range grid (Blanc, Rouge, Trigone). Each card: bottle image, vintage, concise tasting cue, link to tech sheet.
+
+Story: founders/origin; schist & granite; organic at altitude; brief, high signal.
+
+Terroir: bullets for elevation, soils, climate; vineyard map visual.
+
+Journal: 3 latest entries (vineyard/cellar notes).
+
+Visit & Stockists: tasting CTA, stockists PDF link, optional shop link.
+
+Newsletter: light opt-in.
+
+Footer: socials, legal, back-to-top.
+
+(Optional child pages, Phase 2): Per-wine detail pages, Long-read Terroir, Press.
+
+Creative Direction
+Tone & copy: precise, confident, economical. Assume knowledge; avoid over-explaining.
+
+Typography: elegant serif for display, modern humanist/system sans for UI. (Start with system fonts for performance; upgrade to a licensed editorial serif later.)
+
+Imagery: bottle renders on soft paper; vineyard textures; restrained press quotes.
+
+Motion: gentle fade-ups, no gimmicks. Respect “reduced motion” setting.
+
+Color System (Honey / White / Black / Grey)
+Honey #E7A90E (accents/ribbons/hover fills)
+
+Base White/Paper #FCFBF8
+
+Ink #0E0E0E
+
+Stone greys for borders/text: #E8E8E8 / #BDBDBD / #5A5A5A
+
+Technical Approach
+Stack: Single HTML file + Tailwind via CDN + lightweight vanilla JS.
+
+Video: MP4 (and optional WebM) with muted/autoplay/loop/playsinline + poster fallback; <10 MB target.
+
+Bilingual: EN/FR JS dictionary; toggle swaps text instantly; DATAsets for Wines/Journal render per language.
+
+Data: Wines & Journal from small JSON objects (inline for Phase 1; easily swapped to external JSON or a headless CMS).
+
+Performance: lazy images; responsive media; IntersectionObserver reveals; zero heavy deps; future move to compiled Tailwind.
+
+Accessibility: semantic landmarks; keyboard nav; color-contrast safe; motion prefs respected; alt text everywhere.
+
+SEO: descriptive titles/meta; OG/Twitter cards; clean headings; fast CLS-safe font strategy.
+
+Analytics (Phase 2): Plausible or GA4.
+
+No wallets/MetaMask: explicitly excluded.
+
+Content Model (Phase 1, JSON-backed)
+Wine: { slug, img, tech, en: {name, vintage, note}, fr: {name, vintage, note} }
+
+Journal: { img, href, date, en:{title, excerpt}, fr:{title, excerpt} }
+
+Deliverables
+Launch-ready site running on Replit with:
+
+Honey-led palette & editorial design
+
+Hero video masthead
+
+EN/FR toggle
+
+Wines & Journal rendered from inline JSON
+
+Contemporary copy (EN/FR) for Home, Wines, Story, Terroir bullets, Visit, Journal intros
+
+Asset kit: logo SVG/PNG (loaded), bottle PNGs, hero video, poster image, map/terroir visual, stockists PDF.
+
+Handoff notes: performance checklist, adding entries to JSON, swapping assets, optional CMS pathway.
+
+Phase Plan & Timeline
+Phase 1 (Design-in-browser, 3–5 days)
+
+Finalize palette & typography
+
+Implement hero video, EN/FR toggle, JSON-backed Wines/Journal
+
+Accessibility & performance pass
+
+Copy polish (EN/FR)
+
+Phase 2 (Enhancements, 3–5 days)
+
+Per-wine detail pages + vintage matrices
+
+CMS hookup (Contentful / Sanity) or static JSON endpoint
+
+Press/awards module, social cards, analytics
+
+Multi-region SEO tweaks (FR primary)
+
+Success Criteria (Acceptance)
+Lighthouse: Performance ≥ 90, Accessibility ≥ 95, Best Practices ≥ 95, SEO ≥ 90 on mobile.
+
+Hero video autoplays muted on iOS/Android/desktop; graceful fallback poster.
+
+EN/FR toggle flips all visible copy without page reload.
+
+Wines/Journal render from the data model; adding a new wine in JSON shows up instantly.
+
+No wallet/extension calls; no console errors in Replit preview or production.
+
+QA & Test Plan
+Cross-device: iOS Safari, Android Chrome, desktop Chrome/Firefox/Safari.
+
+Reduced motion: verify animations disable.
+
+Slow network: poster visible before video; images lazy-load.
+
+Language coverage: compare EN/FR parity; spot-check diacritics/quotes (FR chevrons and apostrophes).
+
+Asset Checklist (you provide)
+Hero video (MP4), 1920×1080 (or vertical-friendly crop), poster.jpg (~200 KB).
+
+Bottles: transparent PNG (min 1200px height).
+
+Vineyard/story images; terroir map (JPG or SVG).
+
+Stockists PDF; optional shop URL.
+
+Any press pull-quotes & attributions.
+
+Deployment (Replit)
+Paste index.html (already provided) into a new Replit static project.
+
+Upload assets with exact filenames referenced.
+
+Optional: add /_headers or Replit Nix server for cache headers; otherwise rely on CDN defaults.
+
+Optional Phase 2: CMS & Workflow
+Move Wines/Journal JSON into Contentful or Sanity; map fields 1:1.
+
+Tiny build step (Netlify/Cloudflare) or client fetch of JSON; keep zero-backend if preferred.
+
+Editor roles for easy updates; no code changes required for new vintages/notes.
