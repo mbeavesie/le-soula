@@ -6,12 +6,12 @@ export const wines = [
     en: {
       name: 'Le Soula Blanc',
       vintage: '2022',
-      note: 'Grenache Gris, Macabeu, Vermentino — saline, lifted, long.'
+      note: 'Grenache Gris, Macabeu, Vermentino — saline, lifted, long. High-altitude precision meets Mediterranean warmth. Mineral-driven elegance with remarkable persistence.'
     },
     fr: {
       name: 'Le Soula Blanc',
       vintage: '2022',
-      note: 'Grenache Gris, Macabeu, Vermentino — salin, élancé, persistant.'
+      note: 'Grenache Gris, Macabeu, Vermentino — salin, élancé, persistant. La précision de l\'altitude rencontre la chaleur méditerranéenne. Élégance minérale d\'une persistance remarquable.'
     }
   },
   {
@@ -21,12 +21,12 @@ export const wines = [
     en: {
       name: 'Le Soula Rouge',
       vintage: '2021',
-      note: 'Syrah, Carignan — schist-driven spice and freshness.'
+      note: 'Syrah, Carignan — schist-driven spice and freshness. Ancient soils express themselves through fine tannins. Mountain winds preserve natural acidity and aromatic lift.'
     },
     fr: {
       name: 'Le Soula Rouge',
       vintage: '2021',
-      note: 'Syrah, Carignan — épices de schistes et fraîcheur.'
+      note: 'Syrah, Carignan — épices de schistes et fraîcheur. Les sols anciens s\'expriment par des tanins fins. Les vents de montagne préservent acidité naturelle et élévation aromatique.'
     }
   },
   {
@@ -51,12 +51,12 @@ export const wines = [
     en: {
       name: 'Trigone',
       vintage: 'Lot XV',
-      note: 'Solera-style blend. Textural, savoury, persistent.'
+      note: 'Solera-style blend. Textural, savoury, persistent. Multiple vintages create complexity and depth beyond single-year expressions.'
     },
     fr: {
       name: 'Trigone',
       vintage: 'Lot XV',
-      note: 'Assemblage en solera. Texture, saveur, longueur.'
+      note: 'Assemblage en solera. Texture, saveur, longueur. Plusieurs millésimes créent complexité et profondeur au-delà des expressions mono-années.'
     }
   }
 ];
