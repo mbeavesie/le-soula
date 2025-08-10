@@ -13,15 +13,15 @@ export const journalEntries = [
     date: '2024-10-12'
   },
   {
-    img: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+    img: '@assets/5_1754836929513.png',
     href: '#',
     en: {
-      title: 'Winter pruning',
-      excerpt: 'Old vines require careful sap-flow pruning to maintain balance and longevity.'
+      title: 'Coup de Cœur',
+      excerpt: 'Our wines gain accolades in this year\'s "La Revue du Vin".'
     },
     fr: {
-      title: 'Taille d\'hiver',
-      excerpt: 'Vieilles vignes ; respect du flux de sève pour l\'équilibre et la longévité.'
+      title: 'Coup de Cœur',
+      excerpt: 'Nos vins reçoivent des éloges dans "La Revue du Vin" de cette année.'
     },
     date: '2025-01-30'
   },
