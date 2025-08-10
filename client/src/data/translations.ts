@@ -61,6 +61,19 @@ export const translations = {
       title: 'Find Us',
       copy: 'Located in the heart of the Fenouillèdes, our vineyards sit at high altitude on ancient schist and granite soils.'
     },
+    contact: {
+      title: 'Stay Connected',
+      subtitle: 'Join our community for vineyard updates, tasting events, and exclusive releases.',
+      emailPlaceholder: 'Enter your email address',
+      submit: 'Subscribe',
+      sending: 'Sending...',
+      success: 'Success!',
+      successMessage: 'Thank you for subscribing to our newsletter.',
+      error: 'Error',
+      errorMessage: 'Something went wrong. Please try again.',
+      emailError: 'Please enter a valid email address.',
+      privacy: 'We respect your privacy and will never share your email address.'
+    },
     footer: {
       back: 'Back to top ↑'
     }
@@ -126,6 +139,19 @@ export const translations = {
     location: {
       title: 'Nous Trouver',
       copy: 'Situés au cœur des Fenouillèdes, nos vignobles s\'élèvent en altitude sur d\'anciens sols de schiste et de granit.'
+    },
+    contact: {
+      title: 'Restez Connecté',
+      subtitle: 'Rejoignez notre communauté pour les nouvelles du vignoble, événements de dégustation, et sorties exclusives.',
+      emailPlaceholder: 'Entrez votre adresse email',
+      submit: 'S\'abonner',
+      sending: 'Envoi...',
+      success: 'Succès !',
+      successMessage: 'Merci de vous être abonné à notre newsletter.',
+      error: 'Erreur',
+      errorMessage: 'Quelque chose s\'est mal passé. Veuillez réessayer.',
+      emailError: 'Veuillez entrer une adresse email valide.',
+      privacy: 'Nous respectons votre vie privée et ne partagerons jamais votre adresse email.'
     },
     footer: {
       back: 'Retour en haut ↑'

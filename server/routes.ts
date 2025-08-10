@@ -62,6 +62,38 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Contact form endpoint
+  app.post("/api/contact", async (req, res) => {
+    try {
+      const { email } = req.body;
+      
+      if (!email || !email.includes('@')) {
+        return res.status(400).json({ 
+          error: 'Valid email address is required' 
+        });
+      }
+
+      // Here you would typically save to database or send to email service
+      // For now, we'll just log it and return success
+      console.log(`Newsletter subscription: ${email}`);
+      
+      // In production, you might want to:
+      // - Save to database
+      // - Send to email marketing service (Mailchimp, Sendinblue, etc.)
+      // - Send confirmation email
+      
+      res.json({ 
+        success: true, 
+        message: 'Successfully subscribed to newsletter' 
+      });
+    } catch (error) {
+      console.error('Error processing contact form:', error);
+      res.status(500).json({ 
+        error: 'Failed to process subscription. Please try again.' 
+      });
+    }
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;
