@@ -22,10 +22,6 @@ function WineCard({ wine }: WineCardProps) {
             loading="lazy"
             onError={(e) => {
               console.error(`Failed to load image for ${wine.slug}:`, wine.img);
-              // Fallback to a working image
-              if (wine.slug === 'trigone') {
-                e.currentTarget.src = "/attached_assets/Le Soula-100_1754838564312.jpg";
-              }
             }}
             onLoad={() => console.log(`Successfully loaded image for ${wine.slug}:`, wine.img)}
           />
