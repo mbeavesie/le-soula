@@ -1,6 +1,7 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import heroVideoPath from "@assets/Hero home Le Soula_1754822245770.mp4";
+import heroPosterImage from "@assets/Le Soula-100_1754838564312.jpg";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -17,6 +18,7 @@ export default function Hero() {
           loop
           playsInline
           preload="auto"
+          poster={heroPosterImage}
         >
         <source
           src={heroVideoPath}
