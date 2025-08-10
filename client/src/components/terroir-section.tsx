@@ -45,10 +45,10 @@ export default function TerroirSection() {
           </div>
           <a
             href="#"
-            className="group mt-10 inline-flex items-center gap-3 rounded-3xl border border-stone-300/50 px-8 py-4 text-base font-medium text-stone-600 hover:bg-honey-50 hover:border-honey-300 hover:text-honey-700 transition-all duration-300"
+            className="mt-8 inline-flex items-center gap-3 text-sm font-medium text-honey-600 hover:text-honey-700 transition-all duration-300 group/link"
           >
-            <span className="tracking-wide">{t('terroir.cta')}</span>
-            <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span className="tracking-wide">More</span>
+            <svg className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
