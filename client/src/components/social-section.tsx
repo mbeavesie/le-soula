@@ -1,58 +1,49 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import { useState, useEffect } from "react";
 
-interface InstagramPost {
-  id: string;
-  media_url: string;
-  media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM';
-  caption?: string;
-  permalink: string;
-  timestamp: string;
-}
+// Curated social content - update these with authentic content
+const socialPosts = [
+  {
+    id: '1',
+    image: 'https://images.unsplash.com/photo-1474671096392-5f503e32a241?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    caption: 'Morning light over our high-altitude vineyards in the Fenouillèdes. The mountain terroir shaping every vintage.',
+    date: '2 days ago',
+    link: 'https://www.instagram.com/lesoulawine/'
+  },
+  {
+    id: '2', 
+    image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+    caption: 'Hand-harvesting our Syrah. Respect for the fruit, respect for the terroir, respect for time.',
+    date: '5 days ago',
+    link: 'https://www.instagram.com/lesoulawine/'
+  },
+  {
+    id: '3',
+    image: 'https://images.unsplash.com/photo-1566754900347-ee0c6b80b0da?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400', 
+    caption: 'Trigone Lot XV - our perpetual blend capturing the essence of multiple vintages. Complexity through patience.',
+    date: '1 week ago',
+    link: 'https://www.instagram.com/lesoulawine/'
+  }
+];
 
-function InstagramCard({ post }: { post: InstagramPost }) {
+function SocialCard({ post }: { post: typeof socialPosts[0] }) {
   const { ref } = useScrollReveal<HTMLElement>();
   
-  const formatDate = (timestamp: string) => {
-    const date = new Date(timestamp);
-    return date.toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric'
-    });
-  };
-
-  const truncateCaption = (caption?: string) => {
-    if (!caption) return '';
-    return caption.length > 120 ? caption.substring(0, 120) + '...' : caption;
-  };
-
   return (
     <article ref={ref} className="reveal group">
       <a
-        href={post.permalink}
+        href={post.link}
         target="_blank"
         rel="noopener noreferrer"
         className="block rounded-3xl sophisticated-border overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-white to-stone-50/50"
       >
         <div className="relative overflow-hidden">
-          {post.media_type === 'VIDEO' ? (
-            <video
-              src={post.media_url}
-              className="w-full h-56 object-cover"
-              muted
-              playsInline
-              onMouseEnter={(e) => e.currentTarget.play()}
-              onMouseLeave={(e) => e.currentTarget.pause()}
-            />
-          ) : (
-            <img
-              src={post.media_url}
-              alt="Instagram post"
-              className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105"
-              loading="lazy"
-            />
-          )}
+          <img
+            src={post.image}
+            alt="Le Soula Instagram post"
+            className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="absolute top-4 right-4">
             <svg className="w-6 h-6 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
@@ -63,17 +54,15 @@ function InstagramCard({ post }: { post: InstagramPost }) {
         <div className="p-6">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs text-honey-600 font-medium tracking-widest uppercase">
-              {formatDate(post.timestamp)}
+              {post.date}
             </span>
             <span className="text-xs text-stone-500 uppercase tracking-wider">
               @lesoulawine
             </span>
           </div>
-          {post.caption && (
-            <p className="text-stone-600 leading-relaxed font-light text-sm">
-              {truncateCaption(post.caption)}
-            </p>
-          )}
+          <p className="text-stone-600 leading-relaxed font-light text-sm">
+            {post.caption}
+          </p>
         </div>
       </a>
     </article>
@@ -83,44 +72,6 @@ function InstagramCard({ post }: { post: InstagramPost }) {
 export default function SocialSection() {
   const { t } = useLanguage();
   const { ref: headerRef } = useScrollReveal<HTMLDivElement>();
-  const [posts, setPosts] = useState<InstagramPost[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    // Since Instagram Basic Display API requires authentication and user consent,
-    // we'll show a message about connecting Instagram or use a placeholder
-    setLoading(false);
-    setError("Instagram API integration requires authentication setup. Please configure Instagram API credentials to display recent posts.");
-  }, []);
-
-  // Placeholder posts for demonstration
-  const placeholderPosts: InstagramPost[] = [
-    {
-      id: '1',
-      media_url: 'https://images.unsplash.com/photo-1474671096392-5f503e32a241?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
-      media_type: 'IMAGE',
-      caption: 'Morning light over our high-altitude vineyards in the Fenouillèdes. The mountain terroir is everything. #lesoulawine #altitude #terroir',
-      permalink: 'https://www.instagram.com/lesoulawine/',
-      timestamp: new Date().toISOString()
-    },
-    {
-      id: '2',
-      media_url: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
-      media_type: 'IMAGE',
-      caption: 'Hand-harvesting our Syrah. Respect for the fruit, respect for the terroir. #harvest #organic #mountains',
-      permalink: 'https://www.instagram.com/lesoulawine/',
-      timestamp: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()
-    },
-    {
-      id: '3',
-      media_url: 'https://images.unsplash.com/photo-1566754900347-ee0c6b80b0da?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
-      media_type: 'IMAGE',
-      caption: 'Trigone Lot XV - our perpetual blend capturing the essence of multiple vintages. Complexity through time.',
-      permalink: 'https://www.instagram.com/lesoulawine/',
-      timestamp: new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString()
-    }
-  ];
 
   return (
     <section id="social" className="py-32 border-t border-stone-200/50">
@@ -144,17 +95,9 @@ export default function SocialSection() {
         </a>
       </div>
       
-      {error && (
-        <div className="mb-12 p-6 rounded-2xl bg-honey-50/50 border border-honey-200/30 text-center">
-          <p className="text-sm text-stone-600 font-light">
-            {error}
-          </p>
-        </div>
-      )}
-      
       <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-        {placeholderPosts.map((post) => (
-          <InstagramCard key={post.id} post={post} />
+        {socialPosts.map((post) => (
+          <SocialCard key={post.id} post={post} />
         ))}
       </div>
     </section>
