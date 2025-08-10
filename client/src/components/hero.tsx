@@ -1,5 +1,6 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import heroVideoPath from "@assets/Hero home Le Soula_1754822245770.mp4";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -7,7 +8,7 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden" id="top">
-      {/* High-altitude vineyard landscape with mountain backdrop and morning mist */}
+      {/* Le Soula vineyard hero video */}
       <video
         className="absolute inset-0 h-full w-full object-cover"
         autoPlay
@@ -18,7 +19,7 @@ export default function Hero() {
         poster="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080"
       >
         <source
-          src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4"
+          src={heroVideoPath}
           type="video/mp4"
         />
       </video>

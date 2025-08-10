@@ -1,6 +1,6 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import { journalEntries } from "@/data/journal";
+import { journalEntries } from "../data/journal";
 
 interface JournalCardProps {
   entry: typeof journalEntries[0];
