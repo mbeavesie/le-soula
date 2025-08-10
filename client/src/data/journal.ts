@@ -1,6 +1,6 @@
 export const journalEntries = [
   {
-    img: 'https://images.unsplash.com/photo-1571566882372-1598d88abd90?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+    img: '@assets/6_1754836857771.png',
     href: '#',
     en: {
       title: 'Harvest notes',
