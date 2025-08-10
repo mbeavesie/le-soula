@@ -46,6 +46,11 @@ export const translations = {
       title: 'Journal',
       copy: 'Short dispatches from the vineyard and cellar.'
     },
+    social: {
+      title: 'Social',
+      copy: 'Follow our journey through the seasons, from vineyard to cellar.',
+      cta: 'Follow @lesoulawine'
+    },
     visit: {
       title: 'Visit',
       copy: 'By appointment only. We welcome trade and press visits to experience our high-altitude terroir firsthand.',
@@ -106,6 +111,11 @@ export const translations = {
     journal: {
       title: 'Journal',
       copy: 'Nouvelles brèves du vignoble et de la cave.'
+    },
+    social: {
+      title: 'Social',
+      copy: 'Suivez notre parcours à travers les saisons, du vignoble à la cave.',
+      cta: 'Suivre @lesoulawine'
     },
     visit: {
       title: 'Visite',
