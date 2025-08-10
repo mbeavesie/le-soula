@@ -17,7 +17,7 @@ export default function VisitSection() {
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
             href="mailto:hello@lesoula.com"
-            className="group inline-flex items-center justify-center rounded-3xl bg-ink px-10 py-5 text-base font-medium text-white hover:bg-stone-700 transition-all duration-500 luxury-shadow"
+            className="group inline-flex items-center justify-center rounded-3xl border border-stone-300/50 px-10 py-5 text-base font-medium text-stone-600 hover:bg-honey-50 hover:border-honey-300 hover:text-honey-700 transition-all duration-500"
           >
             <span className="tracking-wide">{t('visit.cta')}</span>
             <svg className="ml-3 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -29,6 +29,9 @@ export default function VisitSection() {
             className="group inline-flex items-center justify-center rounded-3xl border border-stone-300/50 px-10 py-5 text-base font-medium text-stone-600 hover:bg-honey-50 hover:border-honey-300 hover:text-honey-700 transition-all duration-500"
           >
             <span className="tracking-wide">{t('visit.stockists')}</span>
+            <svg className="ml-3 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </a>
         </div>
       </div>
