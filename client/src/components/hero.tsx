@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="mt-12 flex flex-col sm:flex-row gap-6">
             <a
               href="#wines"
-              className="group inline-flex items-center justify-center rounded-3xl bg-honey-500/90 backdrop-blur-sm px-10 py-5 text-base font-medium text-white hover:bg-honey-600/90 transition-all duration-500 luxury-shadow"
+              className="group inline-flex items-center justify-center rounded-3xl bg-honey-500/90 backdrop-blur-sm border-2 border-honey-400/60 px-10 py-5 text-base font-medium text-white hover:bg-honey-600/90 hover:border-honey-300/80 transition-all duration-500 luxury-shadow"
             >
               <span className="tracking-wide">{t('hero.ctaPrimary')}</span>
               <svg className="ml-3 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,6 +48,9 @@ export default function Hero() {
               className="group inline-flex items-center justify-center rounded-3xl border-2 border-white/40 backdrop-blur-sm px-10 py-5 text-base font-medium text-white hover:bg-white/15 transition-all duration-500"
             >
               <span className="tracking-wide">{t('hero.ctaSecondary')}</span>
+              <svg className="ml-3 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </a>
           </div>
         </div>
