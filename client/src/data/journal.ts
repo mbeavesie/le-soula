@@ -17,7 +17,7 @@ export const journalEntries = [
     date: '2024-10-12'
   },
   {
-    img: awardImage,
+    img: revueImage,
     href: '#',
     en: {
       title: 'Coup de Cœur',
@@ -30,7 +30,7 @@ export const journalEntries = [
     date: '2025-01-30'
   },
   {
-    img: revueImage,
+    img: 'https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
     href: '#',
     en: {
       title: 'Spring in the high valleys',
