@@ -141,9 +141,19 @@
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
   }
   
+  /* Parallax performance optimization */
+  .will-change-transform {
+    will-change: transform;
+  }
+  
   @media (prefers-reduced-motion: reduce) {
     .reveal {
       transition: none;
+    }
+    
+    .will-change-transform {
+      will-change: auto !important;
+      transform: none !important;
     }
     
     html {

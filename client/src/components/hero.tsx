@@ -1,16 +1,20 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import { useParallax } from "@/hooks/use-parallax";
 import heroVideoPath from "@assets/Hero home Le Soula_1754822245770.mp4";
 
 export default function Hero() {
   const { t } = useLanguage();
   const { ref } = useScrollReveal<HTMLDivElement>();
+  const { ref: videoRef } = useParallax<HTMLVideoElement>({ speed: 0.3, scale: true });
+  const { ref: overlayRef } = useParallax<HTMLDivElement>({ speed: 0.1, opacity: true });
 
   return (
     <section className="relative h-screen w-full overflow-hidden" id="top">
-      {/* Le Soula vineyard hero video */}
+      {/* Le Soula vineyard hero video with parallax */}
       <video
-        className="absolute inset-0 h-full w-full object-cover"
+        ref={videoRef}
+        className="absolute inset-0 h-full w-full object-cover will-change-transform"
         autoPlay
         muted
         loop
@@ -22,7 +26,7 @@ export default function Hero() {
           type="video/mp4"
         />
       </video>
-      <div className="absolute inset-0 hero-overlay"></div>
+      <div ref={overlayRef} className="absolute inset-0 hero-overlay will-change-transform"></div>
       
       <div className="relative z-10 mx-auto flex h-full max-w-7xl items-end px-4 pb-40 sm:px-6 lg:px-8">
         <div ref={ref} className="reveal text-white max-w-4xl">

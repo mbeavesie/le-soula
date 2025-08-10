@@ -1,18 +1,20 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import { useStaggeredParallax } from "@/hooks/use-parallax";
 import { wines } from "@/data/wines";
 
 interface WineCardProps {
   wine: typeof wines[0];
 }
 
-function WineCard({ wine }: WineCardProps) {
+function WineCard({ wine, index }: WineCardProps & { index: number }) {
   const { currentLanguage } = useLanguage();
   const { ref } = useScrollReveal<HTMLDivElement>();
+  const { ref: parallaxRef } = useStaggeredParallax<HTMLDivElement>(index * 100);
   const content = wine[currentLanguage as 'en' | 'fr'];
 
   return (
-    <div ref={ref} className="reveal group">
+    <div ref={parallaxRef} className="reveal group will-change-transform">
       <div className="rounded-3xl sophisticated-border overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-white to-stone-50/50">
         <div className="relative overflow-hidden">
           <img
@@ -60,8 +62,8 @@ export default function WinesSection() {
       </div>
       
       <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-        {wines.map((wine) => (
-          <WineCard key={wine.slug} wine={wine} />
+        {wines.map((wine, index) => (
+          <WineCard key={wine.slug} wine={wine} index={index} />
         ))}
       </div>
     </section>
