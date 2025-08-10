@@ -6,12 +6,12 @@ export const wines = [
     en: {
       name: 'Le Soula Blanc',
       vintage: '2022',
-      note: 'Grenache Gris, Macabeu, Vermentino — saline, lifted, long. High-altitude precision meets Mediterranean warmth. Mineral-driven elegance with remarkable persistence.'
+      note: 'Grenache Gris, Macabeu, Vermentino. Saline precision from altitude. Fresh, mineral, persistent.'
     },
     fr: {
       name: 'Le Soula Blanc',
       vintage: '2022',
-      note: 'Grenache Gris, Macabeu, Vermentino — salin, élancé, persistant. La précision de l\'altitude rencontre la chaleur méditerranéenne. Élégance minérale d\'une persistance remarquable.'
+      note: 'Grenache Gris, Macabeu, Vermentino. Précision saline de l\'altitude. Frais, minéral, persistant.'
     }
   },
   {
@@ -21,12 +21,12 @@ export const wines = [
     en: {
       name: 'Le Soula Rouge',
       vintage: '2021',
-      note: 'Syrah, Carignan — schist-driven spice and freshness. Ancient soils express themselves through fine tannins. Mountain winds preserve natural acidity and aromatic lift.'
+      note: 'Syrah, Carignan from schist soils. Spiced, fresh, mountain-driven. Fine tannins with aromatic lift.'
     },
     fr: {
       name: 'Le Soula Rouge',
       vintage: '2021',
-      note: 'Syrah, Carignan — épices de schistes et fraîcheur. Les sols anciens s\'expriment par des tanins fins. Les vents de montagne préservent acidité naturelle et élévation aromatique.'
+      note: 'Syrah, Carignan sur sols schisteux. Épicé, frais, montagnard. Tanins fins avec élévation aromatique.'
     }
   },
   {
@@ -51,12 +51,12 @@ export const wines = [
     en: {
       name: 'Trigone',
       vintage: 'Lot XV',
-      note: 'Solera-style blend. Textural, savoury, persistent. Multiple vintages create complexity and depth beyond single-year expressions.'
+      note: 'Solera-style perpetual blend. Multiple vintages, textural depth. Savoury complexity, remarkable persistence.'
     },
     fr: {
       name: 'Trigone',
       vintage: 'Lot XV',
-      note: 'Assemblage en solera. Texture, saveur, longueur. Plusieurs millésimes créent complexité et profondeur au-delà des expressions mono-années.'
+      note: 'Assemblage perpétuel en solera. Plusieurs millésimes, profondeur texturale. Complexité savoureuse, persistance remarquable.'
     }
   }
 ];
