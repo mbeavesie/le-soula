@@ -1,29 +1,27 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import { useStaggeredParallax } from "@/hooks/use-parallax";
 import { wines } from "@/data/wines";
 
 interface WineCardProps {
   wine: typeof wines[0];
 }
 
-function WineCard({ wine, index }: WineCardProps & { index: number }) {
+function WineCard({ wine }: WineCardProps) {
   const { currentLanguage } = useLanguage();
   const { ref } = useScrollReveal<HTMLDivElement>();
-  const { ref: parallaxRef } = useStaggeredParallax<HTMLDivElement>(index * 100);
   const content = wine[currentLanguage as 'en' | 'fr'];
 
   return (
-    <div ref={parallaxRef} className="reveal group will-change-transform">
-      <div className="rounded-3xl sophisticated-border overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-white to-stone-50/50">
+    <div ref={ref} className="reveal group">
+      <div className="rounded-3xl sophisticated-border overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-700 hover:-translate-y-1 bg-gradient-to-br from-white to-stone-50/50">
         <div className="relative overflow-hidden">
           <img
             src={wine.img}
             alt={content.name}
-            className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+            className="w-full h-80 object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.02]"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-honey-900/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
         </div>
         <div className="p-10">
           <h3 className="font-serif text-2xl font-light text-ink tracking-wide">
@@ -62,8 +60,8 @@ export default function WinesSection() {
       </div>
       
       <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-        {wines.map((wine, index) => (
-          <WineCard key={wine.slug} wine={wine} index={index} />
+        {wines.map((wine) => (
+          <WineCard key={wine.slug} wine={wine} />
         ))}
       </div>
     </section>

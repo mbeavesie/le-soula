@@ -141,9 +141,12 @@
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
   }
   
-  /* Parallax performance optimization */
-  .will-change-transform {
-    will-change: transform;
+  /* Subtle hero parallax effect */
+  .hero-video-container {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   @media (prefers-reduced-motion: reduce) {
@@ -151,9 +154,8 @@
       transition: none;
     }
     
-    .will-change-transform {
-      will-change: auto !important;
-      transform: none !important;
+    .hero-video-container {
+      background-attachment: scroll !important;
     }
     
     html {

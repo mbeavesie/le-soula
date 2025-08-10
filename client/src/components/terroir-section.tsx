@@ -1,12 +1,10 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import { useFloatingParallax } from "@/hooks/use-parallax";
 import vineyardImage from "@assets/Le Soula-100_1754824026402.jpg";
 
 export default function TerroirSection() {
   const { t } = useLanguage();
   const { ref } = useScrollReveal<HTMLDivElement>();
-  const { ref: imageRef } = useFloatingParallax<HTMLDivElement>(0.15);
 
   return (
     <section id="terroir" className="py-32 border-t border-stone-200/50">
@@ -45,14 +43,14 @@ export default function TerroirSection() {
         </div>
         
         <div className="order-1 lg:order-2">
-          <div ref={imageRef} className="relative group will-change-transform">
+          <div className="relative group">
             <img
               src={vineyardImage}
               alt="Le Soula vineyards at high altitude with mountain backdrop in the Fenouillèdes"
-              className="w-full rounded-3xl luxury-shadow transition-transform duration-700 group-hover:scale-[1.02]"
+              className="w-full rounded-3xl luxury-shadow transition-transform duration-700 group-hover:scale-[1.01]"
               loading="lazy"
             />
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-honey-500/10 via-transparent to-honey-800/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-honey-500/5 via-transparent to-honey-800/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
           </div>
         </div>
       </div>

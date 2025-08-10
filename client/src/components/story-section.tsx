@@ -1,12 +1,10 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import { useFloatingParallax } from "@/hooks/use-parallax";
 import etiquettesImage from "@assets/Etiquettes_1754823984581.jpg";
 
 export default function StorySection() {
   const { t } = useLanguage();
   const { ref } = useScrollReveal<HTMLDivElement>();
-  const { ref: imageRef } = useFloatingParallax<HTMLDivElement>(-0.2);
 
   return (
     <section id="story" className="py-32 border-t border-stone-200/50">
@@ -38,14 +36,14 @@ export default function StorySection() {
           </div>
           
           <div className="order-1 lg:order-2">
-            <div ref={imageRef} className="relative group will-change-transform">
+            <div className="relative group">
               <img
                 src={etiquettesImage}
                 alt="Le Soula wine labels featuring the golden bee logo and Terroir d'Altitude branding"
-                className="w-full rounded-3xl luxury-shadow transition-transform duration-700 group-hover:scale-[1.02]"
+                className="w-full rounded-3xl luxury-shadow transition-transform duration-700 group-hover:scale-[1.01]"
                 loading="lazy"
               />
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-honey-500/10 via-transparent to-honey-800/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-honey-500/5 via-transparent to-honey-800/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             </div>
           </div>
         </div>
