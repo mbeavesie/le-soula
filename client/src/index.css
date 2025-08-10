@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Le Soula Custom Colors */
+  --honey-50: hsl(44, 100%, 95%);
+  --honey-100: hsl(43, 97%, 89%);
+  --honey-200: hsl(42, 95%, 80%);
+  --honey-300: hsl(40, 92%, 70%);
+  --honey-400: hsl(37, 89%, 59%);
+  --honey-500: hsl(32, 86%, 48%);
+  --honey-600: hsl(30, 85%, 41%);
+  --honey-700: hsl(28, 82%, 36%);
+  --honey-800: hsl(25, 78%, 31%);
+  --honey-900: hsl(23, 73%, 26%);
+  
+  --ink: hsl(0, 0%, 5%);
+  --paper: hsl(46, 67%, 98%);
+  --stone-200: hsl(0, 0%, 91%);
+  --stone-400: hsl(0, 0%, 74%);
+  --stone-700: hsl(0, 0%, 35%);
+
+  /* Default shadcn/ui variables */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: var(--ink);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: var(--ink);
+  --primary: var(--honey-500);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: var(--stone-200);
+  --secondary-foreground: var(--ink);
+  --muted: var(--stone-200);
+  --muted-foreground: var(--stone-700);
+  --accent: var(--honey-50);
+  --accent-foreground: var(--honey-700);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: var(--stone-200);
+  --input: hsl(0, 0%, 97%);
+  --ring: var(--honey-500);
+  --chart-1: var(--honey-500);
+  --chart-2: hsl(160, 60%, 45%);
+  --chart-3: hsl(30, 80%, 55%);
+  --chart-4: hsl(280, 65%, 60%);
+  --chart-5: hsl(340, 75%, 55%);
+  --radius: 1rem;
+
+  /* Typography */
+  --font-sans: "Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif";
+  --font-serif: "Crimson Text", "Georgia", "Times New Roman", "serif";
+}
+
+.dark {
+  --background: hsl(0, 0%, 5%);
+  --foreground: hsl(0, 0%, 95%);
+  --card: hsl(0, 0%, 8%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --popover: hsl(0, 0%, 8%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --primary: var(--honey-400);
+  --primary-foreground: hsl(0, 0%, 10%);
+  --secondary: hsl(0, 0%, 15%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 65%);
+  --accent: hsl(0, 0%, 15%);
+  --accent-foreground: hsl(0, 0%, 95%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(0, 0%, 95%);
+  --border: hsl(0, 0%, 15%);
+  --input: hsl(0, 0%, 15%);
+  --ring: var(--honey-400);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-paper text-ink antialiased;
+    font-family: var(--font-sans);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  .glass {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hero-overlay {
+    background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.6) 100%);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      transition: none;
+    }
+    
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
