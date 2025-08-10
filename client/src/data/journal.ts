@@ -5,17 +5,17 @@ import vineyardImage from "@assets/Le Soula-43 (2)_1754837510651.jpeg";
 
 export const journalEntries = [
   {
-    img: winemakerImage,
+    img: vineyardImage,
     href: '#',
     en: {
-      title: 'Harvest notes',
-      excerpt: 'Cool nights; measured ripening; vivid acidity preserved in the final wines.'
+      title: 'Spring in the high valleys',
+      excerpt: 'Cover crops flourishing after late spring rains bring life to the terraces.'
     },
     fr: {
-      title: 'Notes de vendanges',
-      excerpt: 'Nuits fraîches ; maturité mesurée ; acidité vive préservée.'
+      title: 'Printemps en altitude',
+      excerpt: 'Engrais verts vigoureux après les pluies tardives sur les terrasses.'
     },
-    date: '2024-10-12'
+    date: '2025-04-15'
   },
   {
     img: revueImage,
@@ -31,16 +31,16 @@ export const journalEntries = [
     date: '2025-01-30'
   },
   {
-    img: vineyardImage,
+    img: winemakerImage,
     href: '#',
     en: {
-      title: 'Spring in the high valleys',
-      excerpt: 'Cover crops flourishing after late spring rains bring life to the terraces.'
+      title: 'Harvest notes',
+      excerpt: 'Cool nights; measured ripening; vivid acidity preserved in the final wines.'
     },
     fr: {
-      title: 'Printemps en altitude',
-      excerpt: 'Engrais verts vigoureux après les pluies tardives sur les terrasses.'
+      title: 'Notes de vendanges',
+      excerpt: 'Nuits fraîches ; maturité mesurée ; acidité vive préservée.'
     },
-    date: '2025-04-15'
+    date: '2024-10-12'
   }
 ];
