@@ -23,7 +23,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mt-6 flex items-center justify-between rounded-3xl sophisticated-border px-8 py-5 luxury-shadow" style={{ opacity: 0.85 }}>
           <a href="#top" className="flex items-center gap-3 group">
-            <img src={logoPath} alt="Le Soula" className="h-10 w-auto" />
+            <img src={logoPath} alt="Le Soula" className="h-13 w-auto" />
             <span className="sr-only">Le Soula</span>
           </a>
           
