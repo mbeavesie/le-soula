@@ -20,6 +20,14 @@ function WineCard({ wine }: WineCardProps) {
             alt={content.name}
             className="w-full h-80 object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.02]"
             loading="lazy"
+            onError={(e) => {
+              console.error(`Failed to load image for ${wine.slug}:`, wine.img);
+              // Fallback to a working image
+              if (wine.slug === 'trigone') {
+                e.currentTarget.src = "/attached_assets/Le Soula-100_1754838564312.jpg";
+              }
+            }}
+            onLoad={() => console.log(`Successfully loaded image for ${wine.slug}:`, wine.img)}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-honey-900/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
         </div>

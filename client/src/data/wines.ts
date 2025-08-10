@@ -1,7 +1,7 @@
 import blancImage from "@assets/IMGP4704 Large_1754838107419.jpeg";
 import rougeImage from "@assets/IMGP4740 Large_1754838139700.jpeg";
 import macerationImage from "@assets/IMGP4569_1754838166013.png";
-import trigoneImage from "@assets/trigone-wine.jpg";
+const trigoneImage = "/attached_assets/IMGP4504_1754838189146.png";
 
 export const wines = [
   {
