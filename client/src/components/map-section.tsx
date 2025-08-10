@@ -6,21 +6,21 @@ export default function MapSection() {
   const { ref } = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section id="location" className="py-24 border-t border-stone-200">
-      <div ref={ref} className="reveal text-center mb-16">
-        <h2 className="font-serif text-4xl md:text-5xl font-semibold mb-6">
+    <section id="location" className="py-32 border-t border-stone-200/50">
+      <div ref={ref} className="reveal text-center mb-20">
+        <h2 className="font-serif text-5xl md:text-6xl font-light tracking-tight text-gradient mb-8">
           {t('location.title')}
         </h2>
-        <p className="text-xl text-stone-700 max-w-3xl mx-auto">
+        <p className="text-xl text-stone-600 max-w-3xl mx-auto font-light leading-relaxed">
           {t('location.copy')}
         </p>
       </div>
       
-      <div className="rounded-3xl overflow-hidden shadow-soft border border-stone-200">
+      <div className="rounded-3xl overflow-hidden luxury-shadow border border-stone-200/30">
         <div 
-          className="w-full h-96 md:h-[500px]"
+          className="w-full h-96 md:h-[500px] relative"
           style={{
-            filter: 'grayscale(100%) contrast(1.2) brightness(0.9)',
+            filter: 'grayscale(100%) contrast(1.3) brightness(0.85)',
           }}
         >
           <iframe 
@@ -33,6 +33,7 @@ export default function MapSection() {
             referrerPolicy="no-referrer-when-downgrade"
             title="Le Soula Location"
           />
+          <div className="absolute inset-0 border border-stone-300/20 rounded-3xl pointer-events-none"></div>
         </div>
       </div>
     </section>

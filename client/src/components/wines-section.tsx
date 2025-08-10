@@ -13,24 +13,30 @@ function WineCard({ wine }: WineCardProps) {
 
   return (
     <div ref={ref} className="reveal group">
-      <div className="rounded-3xl bg-white border border-stone-200 overflow-hidden shadow-soft hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-        <img
-          src={wine.img}
-          alt={content.name}
-          className="w-full h-80 object-cover"
-          loading="lazy"
-        />
-        <div className="p-8">
-          <h3 className="font-serif text-2xl font-semibold text-ink">
+      <div className="rounded-3xl sophisticated-border overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-white to-stone-50/50">
+        <div className="relative overflow-hidden">
+          <img
+            src={wine.img}
+            alt={content.name}
+            className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+        <div className="p-10">
+          <h3 className="font-serif text-2xl font-light text-ink tracking-wide">
             {content.name}
           </h3>
-          <p className="text-honey-600 font-medium mt-1">{content.vintage}</p>
-          <p className="mt-3 text-stone-700 leading-relaxed">{content.note}</p>
+          <p className="text-honey-600 font-medium mt-2 text-sm tracking-widest uppercase">{content.vintage}</p>
+          <p className="mt-4 text-stone-600 leading-relaxed font-light">{content.note}</p>
           <a
             href={wine.tech}
-            className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-honey-600 hover:text-honey-700 transition-colors"
+            className="mt-6 inline-flex items-center gap-3 text-sm font-medium text-honey-600 hover:text-honey-700 transition-all duration-300 group/link"
           >
-            Technical sheet →
+            <span className="tracking-wide">Technical sheet</span>
+            <svg className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </a>
         </div>
       </div>
@@ -43,17 +49,17 @@ export default function WinesSection() {
   const { ref: headerRef } = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section id="wines" className="py-24 border-t border-stone-200 mt-16">
-      <div ref={headerRef} className="reveal text-center mb-16">
-        <h2 className="font-serif text-4xl md:text-5xl font-semibold">
+    <section id="wines" className="py-32 border-t border-stone-200/50 mt-20">
+      <div ref={headerRef} className="reveal text-center mb-20">
+        <h2 className="font-serif text-5xl md:text-6xl font-light tracking-tight text-gradient">
           {t('wines.title')}
         </h2>
-        <p className="mt-4 text-xl text-stone-700 max-w-3xl mx-auto">
+        <p className="mt-6 text-xl text-stone-600 max-w-3xl mx-auto font-light leading-relaxed">
           {t('wines.copy')}
         </p>
       </div>
       
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {wines.map((wine) => (
           <WineCard key={wine.slug} wine={wine} />
         ))}

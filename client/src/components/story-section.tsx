@@ -6,13 +6,13 @@ export default function StorySection() {
   const { ref } = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section id="story" className="py-24 border-t border-stone-200">
-      <div ref={ref} className="reveal grid items-center gap-16 lg:grid-cols-2">
+    <section id="story" className="py-32 border-t border-stone-200/50">
+      <div ref={ref} className="reveal grid items-center gap-20 lg:grid-cols-2">
         <div className="order-2 lg:order-1">
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold mb-6">
+          <h2 className="font-serif text-5xl md:text-6xl font-light tracking-tight text-gradient mb-8">
             {t('story.title')}
           </h2>
-          <div className="prose prose-lg text-stone-700 space-y-6">
+          <div className="space-y-8 text-lg text-stone-600 font-light leading-relaxed">
             <p>{t('story.p1')}</p>
             <p>{t('story.p2')}</p>
             <p>{t('story.p3')}</p>
@@ -20,13 +20,15 @@ export default function StorySection() {
         </div>
         
         <div className="order-1 lg:order-2">
-          {/* Organic vineyard with old vines on terraced hillsides */}
-          <img
-            src="https://images.unsplash.com/photo-1571566882372-1598d88abd90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-            alt="High-altitude vineyards on terraced hillsides"
-            className="w-full rounded-3xl shadow-soft"
-            loading="lazy"
-          />
+          <div className="relative group">
+            <img
+              src="https://images.unsplash.com/photo-1571566882372-1598d88abd90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+              alt="High-altitude vineyards on terraced hillsides"
+              className="w-full rounded-3xl luxury-shadow transition-transform duration-700 group-hover:scale-[1.02]"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-honey-500/10 via-transparent to-honey-800/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </div>
         </div>
       </div>
     </section>

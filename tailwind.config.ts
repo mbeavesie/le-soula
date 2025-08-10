@@ -77,8 +77,12 @@ export default {
         ink: "var(--ink)",
         paper: "var(--paper)",
         stone: {
+          100: "var(--stone-100)",
           200: "var(--stone-200)",
+          300: "var(--stone-300)",
           400: "var(--stone-400)",
+          500: "var(--stone-500)",
+          600: "var(--stone-600)",
           700: "var(--stone-700)",
         },
       },
