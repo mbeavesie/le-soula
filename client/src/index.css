@@ -114,7 +114,7 @@
   }
   
   .hero-overlay {
-    background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.6) 100%);
+    background: linear-gradient(135deg, rgba(0,0,0,0.36) 0%, rgba(0,0,0,0.18) 50%, rgba(0,0,0,0.54) 100%);
   }
   
   @media (prefers-reduced-motion: reduce) {

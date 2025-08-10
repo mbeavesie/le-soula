@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mt-6 flex items-center justify-between rounded-2xl border border-black/10 bg-white/85 px-6 py-4 glass shadow-glass">
+        <div className="mt-6 flex items-center justify-between rounded-2xl border border-black/10 bg-white/90 px-6 py-4 glass shadow-glass">
           <a href="#top" className="flex items-center gap-3 group">
             <img src={logoPath} alt="Le Soula" className="h-10 w-auto" />
             <span className="sr-only">Le Soula</span>
