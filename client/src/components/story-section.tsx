@@ -1,5 +1,6 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import etiquettesImage from "@assets/Etiquettes_1754823984581.jpg";
 
 export default function StorySection() {
   const { t } = useLanguage();
@@ -22,7 +23,7 @@ export default function StorySection() {
         <div className="order-1 lg:order-2">
           <div className="relative group">
             <img
-              src="/attached_assets/Etiquettes_1754823984581.jpg"
+              src={etiquettesImage}
               alt="Le Soula wine labels featuring the golden bee logo and Terroir d'Altitude branding"
               className="w-full rounded-3xl luxury-shadow transition-transform duration-700 group-hover:scale-[1.02]"
               loading="lazy"

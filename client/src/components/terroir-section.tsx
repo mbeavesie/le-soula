@@ -1,5 +1,6 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import vineyardImage from "@assets/Le Soula-100_1754824026402.jpg";
 
 export default function TerroirSection() {
   const { t } = useLanguage();
@@ -11,7 +12,7 @@ export default function TerroirSection() {
         <div className="order-2 lg:order-1">
           <div className="relative group">
             <img
-              src="/attached_assets/Le Soula-100_1754824026402.jpg"
+              src={vineyardImage}
               alt="Le Soula vineyards at high altitude with mountain backdrop in the Fenouillèdes"
               className="w-full rounded-3xl luxury-shadow transition-transform duration-700 group-hover:scale-[1.02]"
               loading="lazy"
