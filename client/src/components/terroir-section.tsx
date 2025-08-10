@@ -11,8 +11,8 @@ export default function TerroirSection() {
         <div className="order-2 lg:order-1">
           <div className="relative group">
             <img
-              src="https://images.unsplash.com/photo-1518135714426-c18f5ffb6f4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-              alt="Topographical map of the Fenouillèdes wine region"
+              src="/attached_assets/Le Soula-100_1754824026402.jpg"
+              alt="Le Soula vineyards at high altitude with mountain backdrop in the Fenouillèdes"
               className="w-full rounded-3xl luxury-shadow transition-transform duration-700 group-hover:scale-[1.02]"
               loading="lazy"
             />
