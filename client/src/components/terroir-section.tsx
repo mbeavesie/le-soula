@@ -10,18 +10,6 @@ export default function TerroirSection() {
     <section id="terroir" className="py-32 border-t border-stone-200/50">
       <div ref={ref} className="reveal grid items-center gap-20 lg:grid-cols-2">
         <div className="order-2 lg:order-1">
-          <div className="relative group">
-            <img
-              src={vineyardImage}
-              alt="Le Soula vineyards at high altitude with mountain backdrop in the Fenouillèdes"
-              className="w-full rounded-3xl luxury-shadow transition-transform duration-700 group-hover:scale-[1.02]"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-honey-500/10 via-transparent to-honey-800/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          </div>
-        </div>
-        
-        <div className="order-1 lg:order-2">
           <h2 className="font-serif text-5xl md:text-6xl font-light tracking-tight text-gradient mb-8">
             {t('terroir.title')}
           </h2>
@@ -52,6 +40,18 @@ export default function TerroirSection() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
+        </div>
+        
+        <div className="order-1 lg:order-2">
+          <div className="relative group">
+            <img
+              src={vineyardImage}
+              alt="Le Soula vineyards at high altitude with mountain backdrop in the Fenouillèdes"
+              className="w-full rounded-3xl luxury-shadow transition-transform duration-700 group-hover:scale-[1.02]"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-honey-500/10 via-transparent to-honey-800/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </div>
         </div>
       </div>
     </section>
