@@ -46,7 +46,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
               version: embedData.version
             };
           } catch (error) {
-            console.error(`Error fetching Instagram post ${postUrl}:`, error);
             return {
               url: postUrl,
               error: error instanceof Error ? error.message : 'Unknown error'
@@ -57,7 +56,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       res.json({ posts });
     } catch (error) {
-      console.error('Error fetching Instagram posts:', error);
       res.status(500).json({ error: 'Failed to fetch Instagram posts' });
     }
   });
@@ -74,8 +72,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
 
       // Here you would typically save to database or send to email service
-      // For now, we'll just log it and return success
-      console.log(`Newsletter subscription: ${email}`);
+      // For now, we'll just return success
       
       // In production, you might want to:
       // - Save to database
@@ -87,7 +84,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
         message: 'Successfully subscribed to newsletter' 
       });
     } catch (error) {
-      console.error('Error processing contact form:', error);
       res.status(500).json({ 
         error: 'Failed to process subscription. Please try again.' 
       });
