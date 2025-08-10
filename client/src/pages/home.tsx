@@ -6,6 +6,7 @@ import StorySection from "@/components/story-section";
 import TerroirSection from "@/components/terroir-section";
 import JournalSection from "@/components/journal-section";
 import VisitSection from "@/components/visit-section";
+import MapSection from "@/components/map-section";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <TerroirSection />
         <JournalSection />
         <VisitSection />
+        <MapSection />
       </main>
       <Footer />
     </div>

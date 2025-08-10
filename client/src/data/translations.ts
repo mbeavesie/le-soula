@@ -41,6 +41,10 @@ export const translations = {
       cta: 'Book a tasting',
       stockists: 'Find stockists'
     },
+    location: {
+      title: 'Find Us',
+      copy: 'Located in the heart of the Fenouillèdes, our vineyards sit at high altitude on ancient schist and granite soils.'
+    },
     footer: {
       back: 'Back to top ↑'
     }
@@ -86,6 +90,10 @@ export const translations = {
       copy: 'Sur rendez-vous uniquement. Nous accueillons les visites professionnelles et presse pour découvrir notre terroir d\'altitude.',
       cta: 'Réserver une dégustation',
       stockists: 'Trouver des revendeurs'
+    },
+    location: {
+      title: 'Nous Trouver',
+      copy: 'Situés au cœur des Fenouillèdes, nos vignobles s\'élèvent en altitude sur d\'anciens sols de schiste et de granit.'
     },
     footer: {
       back: 'Retour en haut ↑'
