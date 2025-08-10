@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mt-6 flex items-center justify-between rounded-2xl border border-black/10 bg-white px-6 py-4 shadow-glass" style={{ opacity: 0.9 }}>
+        <div className="mt-6 flex items-center justify-between rounded-2xl border border-black/10 bg-white px-6 py-4 shadow-glass" style={{ opacity: 0.85 }}>
           <a href="#top" className="flex items-center gap-3 group">
             <img src={logoPath} alt="Le Soula" className="h-10 w-auto" />
             <span className="sr-only">Le Soula</span>
@@ -81,7 +81,7 @@ export default function Header() {
       {/* Mobile nav */}
       {isMobileMenuOpen && (
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 md:hidden">
-          <div className="mt-3 rounded-2xl border border-black/10 bg-white p-6 shadow-glass" style={{ opacity: 0.9 }}>
+          <div className="mt-3 rounded-2xl border border-black/10 bg-white p-6 shadow-glass" style={{ opacity: 0.85 }}>
             <nav className="space-y-4">
               <a
                 className="block py-2 font-medium hover:text-honey-600 transition-colors"
