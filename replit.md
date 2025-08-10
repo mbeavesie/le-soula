@@ -1,6 +1,11 @@
 # Overview
 
-Le Soula is a modern bilingual (English/French) wine website showcasing high-altitude wines from the Fenouillèdes region. The application features a luxury editorial design with video-first presentation, emphasizing organic farming and terroir. Built as a full-stack React application with Express backend, it uses a clean modern architecture optimized for performance and user experience.
+Le Soula is a modern bilingual (English/French) wine website showcasing high-altitude wines from the Fenouillèdes region. The application features a luxury editorial design with optimized video hero section, emphasizing organic farming and terroir. Built as a full-stack React application with Express backend, it uses a clean modern architecture optimized for performance and user experience.
+
+## Recent Updates (August 2025)
+- **Video Performance Optimization**: Implemented intelligent loading strategy for 16MB hero video with connection-aware loading, immediate poster display, and smooth transitions
+- **Image Asset Integration**: Successfully integrated all authentic Le Soula imagery including wine bottles, vineyard landscapes, and awards
+- **Trigone Wine Card**: Resolved complex filename issues for proper image loading across all wine portfolio items
 
 # User Preferences
 
