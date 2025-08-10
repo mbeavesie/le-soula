@@ -1,5 +1,6 @@
 import blancImage from "@assets/IMGP4704 Large_1754838107419.jpeg";
 import rougeImage from "@assets/IMGP4740 Large_1754838139700.jpeg";
+import macerationImage from "@assets/IMGP4569_1754838166013.png";
 
 export const wines = [
   {
@@ -34,7 +35,7 @@ export const wines = [
   },
   {
     slug: 'maceration',
-    img: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
+    img: macerationImage,
     tech: '#',
     en: {
       name: 'La Macération du Soula',
