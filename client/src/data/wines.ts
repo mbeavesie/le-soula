@@ -1,4 +1,5 @@
 import blancImage from "@assets/IMGP4704 Large_1754838107419.jpeg";
+import rougeImage from "@assets/IMGP4740 Large_1754838139700.jpeg";
 
 export const wines = [
   {
@@ -18,7 +19,7 @@ export const wines = [
   },
   {
     slug: 'rouge',
-    img: 'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
+    img: rougeImage,
     tech: '#',
     en: {
       name: 'Le Soula Rouge',
