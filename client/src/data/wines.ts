@@ -1,6 +1,7 @@
 import blancImage from "@assets/IMGP4704 Large_1754838107419.jpeg";
 import rougeImage from "@assets/IMGP4740 Large_1754838139700.jpeg";
 import macerationImage from "@assets/IMGP4569_1754838166013.png";
+import trigoneImage from "@assets/IMGP4504_1754838189146.png";
 
 export const wines = [
   {
@@ -50,7 +51,7 @@ export const wines = [
   },
   {
     slug: 'trigone',
-    img: 'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
+    img: trigoneImage,
     tech: '#',
     en: {
       name: 'Trigone',
