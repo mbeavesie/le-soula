@@ -1,6 +1,9 @@
+import winemakerImage from "@assets/6_1754836857771.png";
+import awardImage from "@assets/5_1754836929513.png";
+
 export const journalEntries = [
   {
-    img: '@assets/6_1754836857771.png',
+    img: winemakerImage,
     href: '#',
     en: {
       title: 'Harvest notes',
@@ -13,7 +16,7 @@ export const journalEntries = [
     date: '2024-10-12'
   },
   {
-    img: '@assets/5_1754836929513.png',
+    img: awardImage,
     href: '#',
     en: {
       title: 'Coup de Cœur',
