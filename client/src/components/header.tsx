@@ -22,6 +22,11 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mt-6 flex items-center justify-between rounded-2xl border border-black/10 bg-white/85 px-6 py-4 glass shadow-glass">
+          <a href="#top" className="flex items-center gap-3 group">
+            <img src={logoPath} alt="Le Soula" className="h-10 w-auto" />
+            <span className="sr-only">Le Soula</span>
+          </a>
+          
           <nav className="hidden md:block" aria-label="Primary">
             <ul className="flex items-center gap-8 text-sm font-medium">
               <li>
@@ -52,7 +57,7 @@ export default function Header() {
             </ul>
           </nav>
           
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <button
               onClick={toggleLanguage}
               className="rounded-xl border border-stone-200 px-4 py-2 text-sm font-medium hover:bg-honey-50 hover:border-honey-200 transition-all"
@@ -60,10 +65,6 @@ export default function Header() {
             >
               {currentLanguage.toUpperCase()}
             </button>
-            <a href="#top" className="flex items-center gap-3 group">
-              <img src={logoPath} alt="Le Soula" className="h-8 w-auto" />
-              <span className="sr-only">Le Soula</span>
-            </a>
             <button
               onClick={toggleMobileMenu}
               className="md:hidden rounded-xl border border-stone-200 px-4 py-2 text-sm font-medium hover:bg-honey-50 transition-all"
