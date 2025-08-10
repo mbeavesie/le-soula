@@ -5,12 +5,12 @@ export const wines = [
     tech: '#',
     en: {
       name: 'Le Soula Blanc',
-      vintage: '2022',
+      vintage: '',
       note: 'Grenache Gris, Macabeu, Vermentino. Saline precision from altitude. Fresh, mineral, persistent.'
     },
     fr: {
       name: 'Le Soula Blanc',
-      vintage: '2022',
+      vintage: '',
       note: 'Grenache Gris, Macabeu, Vermentino. Précision saline de l\'altitude. Frais, minéral, persistant.'
     }
   },
@@ -20,12 +20,12 @@ export const wines = [
     tech: '#',
     en: {
       name: 'Le Soula Rouge',
-      vintage: '2021',
+      vintage: '',
       note: 'Syrah, Carignan from schist soils. Spiced, fresh, mountain-driven. Fine tannins with aromatic lift.'
     },
     fr: {
       name: 'Le Soula Rouge',
-      vintage: '2021',
+      vintage: '',
       note: 'Syrah, Carignan sur sols schisteux. Épicé, frais, montagnard. Tanins fins avec élévation aromatique.'
     }
   },
@@ -35,12 +35,12 @@ export const wines = [
     tech: '#',
     en: {
       name: 'La Macération du Soula',
-      vintage: '2022',
+      vintage: '',
       note: 'Extended skin contact. Wild fermentation. Mountain expression in its purest form.'
     },
     fr: {
       name: 'La Macération du Soula',
-      vintage: '2022',
+      vintage: '',
       note: 'Macération pelliculaire prolongée. Fermentation sauvage. Expression montagnarde à l\'état pur.'
     }
   },
@@ -50,12 +50,12 @@ export const wines = [
     tech: '#',
     en: {
       name: 'Trigone',
-      vintage: 'Lot XV',
+      vintage: '',
       note: 'Solera-style perpetual blend. Multiple vintages, textural depth. Savoury complexity, remarkable persistence.'
     },
     fr: {
       name: 'Trigone',
-      vintage: 'Lot XV',
+      vintage: '',
       note: 'Assemblage perpétuel en solera. Plusieurs millésimes, profondeur texturale. Complexité savoureuse, persistance remarquable.'
     }
   }

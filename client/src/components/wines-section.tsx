@@ -27,8 +27,10 @@ function WineCard({ wine }: WineCardProps) {
           <h3 className="font-serif text-2xl font-light text-ink tracking-wide">
             {content.name}
           </h3>
-          <p className="text-honey-600 font-medium mt-2 text-sm tracking-widest uppercase">{content.vintage}</p>
-          <p className="mt-4 text-stone-600 leading-relaxed font-light">{content.note}</p>
+          {content.vintage && (
+            <p className="text-honey-600 font-medium mt-2 text-sm tracking-widest uppercase">{content.vintage}</p>
+          )}
+          <p className={`${content.vintage ? 'mt-4' : 'mt-2'} text-stone-600 leading-relaxed font-light`}>{content.note}</p>
           <a
             href={wine.tech}
             className="mt-6 inline-flex items-center gap-3 text-sm font-medium text-honey-600 hover:text-honey-700 transition-all duration-300 group/link"
