@@ -15,8 +15,7 @@ export default function Hero() {
         muted
         loop
         playsInline
-        preload="metadata"
-        poster="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080"
+        preload="auto"
       >
         <source
           src={heroVideoPath}
