@@ -1,7 +1,9 @@
+import blancImage from "@assets/IMGP4704 Large_1754838107419.jpeg";
+
 export const wines = [
   {
     slug: 'blanc',
-    img: 'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600',
+    img: blancImage,
     tech: '#',
     en: {
       name: 'Le Soula Blanc',
