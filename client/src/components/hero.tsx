@@ -1,30 +1,76 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import { useState, useRef, useEffect } from "react";
 import heroVideoPath from "@assets/Hero home Le Soula_1754822245770.mp4";
 import heroPosterImage from "@assets/Le Soula-100_1754838564312.jpg";
 
 export default function Hero() {
   const { t } = useLanguage();
   const { ref } = useScrollReveal<HTMLDivElement>();
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Check connection speed and device capabilities
+    const connection = (navigator as any)?.connection;
+    const isSlowConnection = connection?.effectiveType === '2g' || connection?.effectiveType === 'slow-2g';
+    const prefersReducedData = connection?.saveData;
+    
+    // Only load video on fast connections and capable devices
+    if (!isSlowConnection && !prefersReducedData) {
+      // Defer video loading until after initial page render and critical resources
+      const timer = setTimeout(() => {
+        setShowVideo(true);
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  const handleVideoLoad = () => {
+    setVideoLoaded(true);
+  };
 
   return (
     <section className="relative h-screen w-full overflow-hidden" id="top">
-      {/* Le Soula vineyard hero video with subtle parallax */}
+      {/* Le Soula vineyard hero video with optimized loading */}
       <div className="absolute inset-0 hero-video-container">
-        <video
-          className="absolute inset-0 h-full w-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster={heroPosterImage}
+        {/* High-quality poster image shown immediately */}
+        <div 
+          className={`absolute inset-0 h-full w-full bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${videoLoaded ? 'opacity-0' : 'opacity-100'}`}
+          style={{ backgroundImage: `url(${heroPosterImage})` }}
         >
-        <source
-          src={heroVideoPath}
-          type="video/mp4"
-        />
-        </video>
+          {/* Loading indicator for video */}
+          {showVideo && !videoLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+              <div className="flex items-center space-x-2 text-white/80">
+                <div className="animate-spin rounded-full h-6 w-6 border-2 border-white/30 border-t-white/80"></div>
+                <span className="text-sm font-light tracking-wide">Loading video...</span>
+              </div>
+            </div>
+          )}
+        </div>
+        
+        {/* Video loads after initial render to improve perceived performance */}
+        {showVideo && (
+          <video
+            ref={videoRef}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+            poster={heroPosterImage}
+            onLoadedData={handleVideoLoad}
+            onCanPlay={handleVideoLoad}
+          >
+            <source
+              src={heroVideoPath}
+              type="video/mp4"
+            />
+          </video>
+        )}
       </div>
       <div className="absolute inset-0 hero-overlay"></div>
       

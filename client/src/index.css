@@ -141,6 +141,19 @@
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
   }
   
+  /* Optimized video loading and performance */
+  .hero-video-container video {
+    will-change: opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+  
+  /* Smooth poster to video transition */
+  .hero-video-container > div {
+    will-change: opacity;
+    transform: translateZ(0);
+  }
+  
   /* Subtle hero parallax effect */
   .hero-video-container {
     background-attachment: fixed;
