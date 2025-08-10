@@ -17,6 +17,17 @@ export const translations = {
       title: 'The Wines',
       copy: 'Schist and granite shape precision and lift. Whites with texture; reds with energy.'
     },
+    maceration: {
+      title: 'La Macération du Soula',
+      subtitle: 'Natural winemaking in the mountains',
+      p1: 'Our maceration process honors the ancient traditions of winemaking while embracing the unique character of our high-altitude terroir.',
+      p2: 'Extended skin contact allows the granite and schist to express themselves fully, creating wines of remarkable depth and mineral precision.',
+      p3: 'No additives, no manipulation—just time, patience, and respect for what the mountain vineyard offers each vintage.',
+      feature1: 'Extended skin maceration',
+      feature2: 'Wild yeast fermentation',
+      feature3: 'Minimal sulfur additions',
+      feature4: 'Gravity-fed cellar work'
+    },
     story: {
       title: 'Our Story',
       p1: 'High-altitude vineyards in the Fenouillèdes. Old vines on schist and granite. Organic farming, hand harvests, and a light touch in the cellar.',
@@ -66,6 +77,17 @@ export const translations = {
     wines: {
       title: 'Les Vins',
       copy: 'Schiste et granit façonnent précision et élévation. Blancs texturés ; rouges énergiques.'
+    },
+    maceration: {
+      title: 'La Macération du Soula',
+      subtitle: 'Vinification naturelle en montagne',
+      p1: 'Notre processus de macération honore les traditions ancestrales de la vinification tout en embrassant le caractère unique de notre terroir d\'altitude.',
+      p2: 'Le contact prolongé avec les peaux permet au granit et au schiste de s\'exprimer pleinement, créant des vins d\'une profondeur et d\'une précision minérale remarquables.',
+      p3: 'Aucun additif, aucune manipulation—juste du temps, de la patience, et du respect pour ce que le vignoble de montagne offre à chaque millésime.',
+      feature1: 'Macération pelliculaire prolongée',
+      feature2: 'Fermentation aux levures indigènes',
+      feature3: 'Ajouts de soufre minimaux',
+      feature4: 'Travail de cave par gravité'
     },
     story: {
       title: 'Notre Histoire',

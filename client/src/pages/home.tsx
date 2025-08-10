@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import WinesSection from "@/components/wines-section";
+import MacerationSection from "@/components/maceration-section";
 import StorySection from "@/components/story-section";
 import TerroirSection from "@/components/terroir-section";
 import JournalSection from "@/components/journal-section";
@@ -22,6 +23,7 @@ export default function Home() {
       <Hero />
       <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <WinesSection />
+        <MacerationSection />
         <StorySection />
         <TerroirSection />
         <JournalSection />
