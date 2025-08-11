@@ -30,9 +30,9 @@ export const translations = {
     },
     story: {
       title: 'Our Story',
-      p1: 'High-altitude vineyards in the Fenouillèdes. Old vines on schist and granite. Organic farming, hand harvests, and a light touch in the cellar.',
-      p2: 'Elevation brings clarity. Whites are saline and precise; reds are fragrant and finely textured.',
-      p3: 'Each vintage tells the story of these ancient soils and mountain winds, captured with minimal intervention and maximum respect for the terroir.'
+      p1: 'At Le Soula, the humble bee is more than a visitor to our vines—it\'s our muse. Tireless, collaborative, and deeply attuned to its environment, the bee embodies everything we believe in: working with nature, respecting its rhythms, and creating something greater than the sum of its parts.',
+      p2: 'Le Soula was born in 2001 when visionary winemaker Gérard Gauby, alongside English importers Roy Richards and Mark Walford, recognized the potent potential of the Fenouillèdes terroir—granite-rich, pesticide-free soils kissed by cool mountain air and Southern sun. With 22 hectares spanning altitudes from 350 to 600 meters, we embraced biodynamic viticulture from the outset.',
+      p3: 'In 2016, South African-born Wendy Wilson took the helm, blending deep international experience with an instinctive respect for this unique land. Today, Le Soula is a living, breathing ecosystem—where bees pollinate, soils thrive, and wines are crafted with patience. Like the bee, we move with purpose, knowing that great things take care, connection, and just the right conditions to flourish.'
     },
     terroir: {
       title: 'Terroir',
@@ -109,9 +109,9 @@ export const translations = {
     },
     story: {
       title: 'Notre Histoire',
-      p1: 'Vignobles d\'altitude dans les Fenouillèdes. Vieilles vignes sur schiste et granit. Agriculture biologique, vendanges manuelles, et intervention minimale en cave.',
-      p2: 'L\'altitude apporte la clarté. Les blancs sont salins et précis ; les rouges parfumés et finement texturés.',
-      p3: 'Chaque millésime raconte l\'histoire de ces sols anciens et des vents de montagne, capturée avec une intervention minimale et un respect maximal du terroir.'
+      p1: 'Au Soula, l\'humble abeille n\'est pas qu\'une visiteuse de nos vignes—c\'est notre muse. Infatigable, collaborative et profondément à l\'écoute de son environnement, l\'abeille incarne tout ce en quoi nous croyons : travailler avec la nature, respecter ses rythmes et créer quelque chose de plus grand que la somme de ses parties.',
+      p2: 'Le Soula est né en 2001 quand le vigneron visionnaire Gérard Gauby, aux côtés des importateurs anglais Roy Richards et Mark Walford, a reconnu le potentiel puissant du terroir des Fenouillèdes—sols riches en granit, sans pesticides, caressés par l\'air frais des montagnes et le soleil du Sud. Avec 22 hectares s\'étendant de 350 à 600 mètres d\'altitude, nous avons embrassé la viticulture biodynamique dès le début.',
+      p3: 'En 2016, Wendy Wilson, née en Afrique du Sud, a pris les rênes, mêlant une profonde expérience internationale à un respect instinctif pour cette terre unique. Aujourd\'hui, Le Soula est un écosystème vivant et respirant—où les abeilles pollinisent, les sols prospèrent et les vins sont élaborés avec patience. Comme l\'abeille, nous agissons avec intention, sachant que les grandes choses demandent du soin, de la connexion et les bonnes conditions pour s\'épanouir.'
     },
     terroir: {
       title: 'Terroir',
