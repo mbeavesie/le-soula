@@ -5,13 +5,15 @@ import trigoneImage from "@assets/trigone.png";
 import vineyardImage from "@assets/Le Soula-100_1754824026402.jpg";
 import bottleImage from "@assets/IMGP4504_1754838189146.png";
 import awardsImage from "@assets/Revue de vins_1754837341373.png";
+import blancBottle1 from "@assets/4_1754899531019.png";
+import blancBottle2 from "@assets/post2_1754899553486.png";
 
 export const wines = [
   {
     slug: 'blanc',
     img: blancImage,
     tech: '/tech-sheets/le-soula-blanc.pdf',
-    images: [blancImage, vineyardImage, bottleImage],
+    images: [blancImage, blancBottle1, blancBottle2],
     en: {
       name: 'Le Soula Blanc',
       vintage: '2023',
