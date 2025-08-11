@@ -90,7 +90,7 @@ export const wines = [
     slug: 'maceration',
     img: macerationImage,
     tech: '/tech-sheets/maceration-du-soula.pdf',
-    images: [macerationImage, macerationImage2, bottleImage],
+    images: [macerationImage, macerationImage2, vineyardImage],
     en: {
       name: 'La Macération du Soula',
       vintage: '2023',
