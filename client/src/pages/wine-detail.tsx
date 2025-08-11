@@ -13,9 +13,9 @@ export default function WineDetail() {
   
   const wine = wines.find(w => w.slug === slug);
   
-  // Scroll to top and reset carousel when component mounts or slug changes
+  // Position at top and reset carousel when component mounts or slug changes
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
     setCurrentImageIndex(0);
   }, [slug]);
   
