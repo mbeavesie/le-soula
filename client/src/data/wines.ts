@@ -7,6 +7,7 @@ import bottleImage from "@assets/IMGP4504_1754838189146.png";
 import awardsImage from "@assets/Revue de vins_1754837341373.png";
 import blancBottle1 from "@assets/4_1754899531019.png";
 import blancBottle2 from "@assets/post2_1754899553486.png";
+import macerationImage2 from "@assets/IMG_7161_1754899905690.jpeg";
 
 export const wines = [
   {
@@ -89,7 +90,7 @@ export const wines = [
     slug: 'maceration',
     img: macerationImage,
     tech: '/tech-sheets/maceration-du-soula.pdf',
-    images: [macerationImage, vineyardImage, bottleImage],
+    images: [macerationImage, macerationImage2, bottleImage],
     en: {
       name: 'La Macération du Soula',
       vintage: '2023',
