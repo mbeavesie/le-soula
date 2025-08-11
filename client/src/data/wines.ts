@@ -169,7 +169,7 @@ export const wines = [
     slug: 'rose',
     img: roseImage,
     tech: '/tech-sheets/le-rose-du-soula.pdf',
-    images: [roseImage, vineyardImage, awardsImage],
+    images: [roseImage, vineyardImage],
     en: {
       name: 'Le Rosé du Soula',
       vintage: '2022',
