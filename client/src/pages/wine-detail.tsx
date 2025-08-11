@@ -2,7 +2,7 @@ import { useParams, Link } from "wouter";
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { wines } from "@/data/wines";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Download, ArrowLeft } from "lucide-react";
 
 export default function WineDetail() {
@@ -12,6 +12,12 @@ export default function WineDetail() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const wine = wines.find(w => w.slug === slug);
+  
+  // Scroll to top and reset carousel when component mounts or slug changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setCurrentImageIndex(0);
+  }, [slug]);
   
   if (!wine) {
     return (
