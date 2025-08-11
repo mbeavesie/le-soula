@@ -8,6 +8,8 @@ import awardsImage from "@assets/Revue de vins_1754837341373.png";
 import blancBottle1 from "@assets/4_1754899531019.png";
 import blancBottle2 from "@assets/post2_1754899553486.png";
 import macerationImage2 from "@assets/IMG_7161_1754899905690.jpeg";
+import trigoneImage2 from "@assets/trigone_bottle_tree.png";
+import trigoneImage3 from "@assets/IMGP4516_1754900198055.png";
 
 export const wines = [
   {
@@ -128,7 +130,7 @@ export const wines = [
     slug: 'trigone',
     img: trigoneImage,
     tech: '/tech-sheets/trigone.pdf',
-    images: [trigoneImage, vineyardImage, awardsImage],
+    images: [trigoneImage, trigoneImage2, trigoneImage3],
     en: {
       name: 'Trigone',
       vintage: 'Non-Vintage',
