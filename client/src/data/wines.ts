@@ -10,6 +10,7 @@ import blancBottle2 from "@assets/post2_1754899553486.png";
 import macerationImage2 from "@assets/IMG_7161_1754899905690.jpeg";
 import trigoneImage2 from "@assets/trigone_bottle_tree.png";
 import trigoneImage3 from "@assets/IMGP4516_1754900198055.png";
+import roseImage from "@assets/le rosé du soula 2022_1754900347150.png";
 
 export const wines = [
   {
@@ -162,6 +163,44 @@ export const wines = [
       ],
       quote: 'Un vin d\'une complexité et d\'une résonance émotionnelle sans précédent',
       quotesource: 'Rajat Parr'
+    }
+  },
+  {
+    slug: 'rose',
+    img: roseImage,
+    tech: '/tech-sheets/le-rose-du-soula.pdf',
+    images: [roseImage, vineyardImage, awardsImage],
+    en: {
+      name: 'Le Rosé du Soula',
+      vintage: '2022',
+      note: '100% Syrah from high-altitude terroir. Limited production of 1300 bottles. Biodynamic viticulture with natural vinification.',
+      tastingNotes: {
+        sight: 'Delicate salmon pink color with brilliant clarity, reflecting pure mountain expression',
+        nose: 'Fresh red berries, wild herbs, and mineral precision from granite and gneiss soils',
+        palate: 'Crisp and elegant with saline minerality, vibrant acidity, and a long, refined finish'
+      },
+      awards: [
+        { title: 'Organic Certification', score: 'Certified Bio', year: '2022' },
+        { title: 'Biodynamic Recognition', score: 'Outstanding', year: '2022' }
+      ],
+      quote: 'A rare expression of high-altitude rosé with exceptional purity and precision',
+      quotesource: 'Le Soula Estate'
+    },
+    fr: {
+      name: 'Le Rosé du Soula',
+      vintage: '2022',
+      note: '100% Syrah de terroir d\'altitude. Production limitée de 1300 bouteilles. Viticulture biodynamique avec vinification naturelle.',
+      tastingNotes: {
+        sight: 'Couleur saumon délicat d\'une clarté brillante, reflet d\'une expression montagnarde pure',
+        nose: 'Fruits rouges frais, herbes sauvages et précision minérale des sols granitiques et gneissiques',
+        palate: 'Net et élégant avec une minéralité saline, une acidité vive et une finale longue et raffinée'
+      },
+      awards: [
+        { title: 'Certification Biologique', score: 'Certifié Bio', year: '2022' },
+        { title: 'Reconnaissance Biodynamique', score: 'Exceptionnel', year: '2022' }
+      ],
+      quote: 'Une expression rare de rosé d\'altitude avec une pureté et une précision exceptionnelles',
+      quotesource: 'Domaine Le Soula'
     }
   }
 ];
