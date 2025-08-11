@@ -23,16 +23,8 @@ export default function StorySection() {
               <p>{t('story.p1')}</p>
               <p>{t('story.p2')}</p>
               <p>{t('story.p3')}</p>
+              <p>{t('story.p4')}</p>
             </div>
-            <a
-              href="#"
-              className="mt-8 inline-flex items-center gap-3 text-sm font-medium text-honey-600 hover:text-honey-700 transition-all duration-300 group/link"
-            >
-              <span className="tracking-wide">More</span>
-              <svg className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </a>
           </div>
           
           <div className="order-1 lg:order-2">
