@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import etiquettesImage from "@assets/Etiquettes_1754823984581.jpg";
+import beeImage from "@assets/bee_1754904751800.png";
 import vineyardImage from "@assets/Le Soula-100_1754824026402.jpg";
-import wineBottlesImage from "@assets/4_1754899531019.png";
-import cellarImage from "@assets/IMGP4504_1754838189146.png";
+import etiquettesImage from "@assets/Etiquettes_1754823984581.jpg";
+import wendyImage from "@assets/6_1754904851528.png";
 
 export default function StorySection() {
   const { t } = useLanguage();
@@ -13,8 +13,8 @@ export default function StorySection() {
 
   const storyImages = [
     {
-      src: etiquettesImage,
-      alt: "Le Soula wine labels featuring the golden bee logo and Terroir d'Altitude branding",
+      src: beeImage,
+      alt: "Close-up of a bee on vine leaves, representing Le Soula's inspiration and natural philosophy",
       caption: "The bee as our muse"
     },
     {
@@ -23,13 +23,13 @@ export default function StorySection() {
       caption: "Terroir of granite and schist"
     },
     {
-      src: cellarImage,
-      alt: "Wine cellar and winemaking facilities at Le Soula",
+      src: etiquettesImage,
+      alt: "Le Soula wine labels featuring the golden bee logo and Terroir d'Altitude branding",
       caption: "Restored cellar in Prugnanes"
     },
     {
-      src: wineBottlesImage,
-      alt: "Le Soula wine bottles showcasing the range",
+      src: wendyImage,
+      alt: "Wendy Wilson, Le Soula's winemaker, with Le Soula wines at the winery",
       caption: "Today's living ecosystem"
     }
   ];
