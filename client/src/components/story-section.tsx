@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import beeImage from "@assets/bee_1754904751800.png";
-import valleyImage from "@assets/Le Soula valley_1754909174954.jpeg";
+import valleyGif from "@assets/eavesie._httpss.mj.runvhgVhqn5VQw_--ar_256171_--video_1_15c5eef8-d16a-49d9-8784-55d7ed00dacd_1_1754911106100.gif";
 import etiquettesImage from "@assets/Etiquettes_1754823984581.jpg";
 import wendyImage from "@assets/6_1754904851528.png";
 
@@ -18,8 +18,8 @@ export default function StorySection() {
       caption: "The bee as our muse"
     },
     {
-      src: valleyImage,
-      alt: "Le Soula valley landscape showing the pristine mountain terroir of the Fenouillèdes",
+      src: valleyGif,
+      alt: "Animated view of Le Soula valley landscape showing the pristine mountain terroir of the Fenouillèdes",
       caption: "Terroir of granite and schist"
     },
     {
