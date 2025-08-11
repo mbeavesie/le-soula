@@ -9,7 +9,7 @@ Le Soula is a modern bilingual (English/French) wine website showcasing high-alt
 - **Code Cleanup**: Removed debugging console logs, cleaned up duplicate image files, optimized asset directory (123MB total assets)
 - **Rosé Wine Addition**: Added Le Rosé du Soula 2022 with authentic technical data from estate PDF, limited production details, and biodynamic certification information
 - **Ghost Blog Integration**: Connected Le Soula website to Ghost CMS for easy blog management, with automatic sync and fallback content
-- **Complete Story Section**: Updated "Our Story" with full bee-inspired narrative covering 2001 founding through Wendy Wilson's 2016 leadership, displaying complete text without expandable links
+- **Expandable Story Section**: Created interactive story section with authentic Le Soula images, showing first paragraph by default with "Read Full Story" expansion to reveal complete bee-inspired narrative with integrated imagery for each historical period
 
 # User Preferences
 

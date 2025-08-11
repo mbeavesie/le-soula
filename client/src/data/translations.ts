@@ -30,6 +30,8 @@ export const translations = {
     },
     story: {
       title: 'Our Story',
+      expandButton: 'Read Full Story',
+      collapseButton: 'Show Less',
       p1: 'At Le Soula, the humble bee is more than a visitor to our vines—it\'s our muse. Tireless, collaborative, and deeply attuned to its environment, the bee embodies everything we believe in: working with nature, respecting its rhythms, and creating something greater than the sum of its parts. In the high foothills of the Eastern Pyrenees, our vineyards hum with this same quiet industry.',
       p2: 'Le Soula was born in 2001 when visionary winemaker Gérard Gauby, alongside English importers Roy Richards and Mark Walford, recognized the potent potential of the Fenouillèdes terroir—granite-rich, pesticide-free soils kissed by cool mountain air and Southern sun. With 22 hectares spanning altitudes from 350 to 600 meters across Saint Martin de Fenouillet, Feilluns, Saint Arnac, and Le Vivier, we embraced biodynamic viticulture from the outset, guided by lunar cycles and natural composts.',
       p3: 'By 2008, a restored co-op cellar in Prugnanes became our winemaking home—perfect for nurturing the elegance and restraint at the heart of Le Soula. That same year, Gérald Standley brought his Bordeaux finesse to the team, steering us toward even greater refinement and character.',
@@ -110,6 +112,8 @@ export const translations = {
     },
     story: {
       title: 'Notre Histoire',
+      expandButton: 'Lire l\'Histoire Complète',
+      collapseButton: 'Réduire',
       p1: 'Au Soula, l\'humble abeille n\'est pas qu\'une visiteuse de nos vignes—c\'est notre muse. Infatigable, collaborative et profondément à l\'écoute de son environnement, l\'abeille incarne tout ce en quoi nous croyons : travailler avec la nature, respecter ses rythmes et créer quelque chose de plus grand que la somme de ses parties. Dans les contreforts orientaux des Pyrénées, nos vignobles bourdonnent de cette même industrie silencieuse.',
       p2: 'Le Soula est né en 2001 quand le vigneron visionnaire Gérard Gauby, aux côtés des importateurs anglais Roy Richards et Mark Walford, a reconnu le potentiel puissant du terroir des Fenouillèdes—sols riches en granit, sans pesticides, caressés par l\'air frais des montagnes et le soleil du Sud. Avec 22 hectares s\'étendant de 350 à 600 mètres d\'altitude sur Saint Martin de Fenouillet, Feilluns, Saint Arnac et Le Vivier, nous avons embrassé la viticulture biodynamique dès le début, guidés par les cycles lunaires et les composts naturels.',
       p3: 'En 2008, une cave coopérative restaurée à Prugnanes devient notre foyer viticole—parfaite pour cultiver l\'élégance et la retenue au cœur du Soula. La même année, Gérald Standley apporte sa finesse bordelaise à l\'équipe, nous orientant vers encore plus de raffinement et de caractère.',
