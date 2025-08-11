@@ -10,7 +10,7 @@ import blancBottle2 from "@assets/post2_1754899553486.png";
 import macerationImage2 from "@assets/IMG_7161_1754899905690.jpeg";
 import trigoneImage2 from "@assets/trigone_bottle_tree.png";
 import trigoneImage3 from "@assets/IMGP4516_1754900198055.png";
-import roseImage from "@assets/le rosé du soula 2022_1754900347150.png";
+import roseImage from "@assets/le-rose-du-soula-2022_1754900347150.png";
 
 export const wines = [
   {
