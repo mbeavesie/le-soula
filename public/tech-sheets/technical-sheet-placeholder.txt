@@ -1,0 +1,3 @@
+# Technical Sheet Placeholder
+This is where the actual PDF technical sheets would be placed for download.
+The wine detail pages will link to these files for users to download.

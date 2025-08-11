@@ -1,6 +1,7 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { wines } from "@/data/wines";
+import { Link } from "wouter";
 
 interface WineCardProps {
   wine: typeof wines[0];
@@ -13,36 +14,34 @@ function WineCard({ wine }: WineCardProps) {
 
   return (
     <div ref={ref} className="reveal group">
-      <div className="rounded-3xl sophisticated-border overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-700 hover:-translate-y-1 bg-gradient-to-br from-white to-stone-50/50">
-        <div className="relative overflow-hidden">
-          <img
-            src={wine.img}
-            alt={content.name}
-            className="w-full h-80 object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.02]"
-            loading="lazy"
-
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-honey-900/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+      <Link href={`/wine/${wine.slug}`}>
+        <div className="rounded-3xl sophisticated-border overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-700 hover:-translate-y-1 bg-gradient-to-br from-white to-stone-50/50 cursor-pointer">
+          <div className="relative overflow-hidden">
+            <img
+              src={wine.img}
+              alt={content.name}
+              className="w-full h-80 object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.02]"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-honey-900/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+          </div>
+          <div className="p-10">
+            <h3 className="font-serif text-2xl font-light text-ink tracking-wide">
+              {content.name}
+            </h3>
+            {content.vintage && (
+              <p className="text-honey-600 font-medium mt-2 text-sm tracking-widest uppercase">{content.vintage}</p>
+            )}
+            <p className={`${content.vintage ? 'mt-4' : 'mt-2'} text-stone-600 leading-relaxed font-light`}>{content.note}</p>
+            <div className="mt-6 inline-flex items-center gap-3 text-sm font-medium text-honey-600 hover:text-honey-700 transition-all duration-300 group/link">
+              <span className="tracking-wide">{currentLanguage === 'en' ? 'Discover' : 'Découvrir'}</span>
+              <svg className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+          </div>
         </div>
-        <div className="p-10">
-          <h3 className="font-serif text-2xl font-light text-ink tracking-wide">
-            {content.name}
-          </h3>
-          {content.vintage && (
-            <p className="text-honey-600 font-medium mt-2 text-sm tracking-widest uppercase">{content.vintage}</p>
-          )}
-          <p className={`${content.vintage ? 'mt-4' : 'mt-2'} text-stone-600 leading-relaxed font-light`}>{content.note}</p>
-          <a
-            href={wine.tech}
-            className="mt-6 inline-flex items-center gap-3 text-sm font-medium text-honey-600 hover:text-honey-700 transition-all duration-300 group/link"
-          >
-            <span className="tracking-wide">More</span>
-            <svg className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
-        </div>
-      </div>
+      </Link>
     </div>
   );
 }
