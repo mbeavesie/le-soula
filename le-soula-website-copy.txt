@@ -1,0 +1,426 @@
+LE SOULA WEBSITE COPY - COMPLETE TEXT CONTENT
+========================================================
+
+This document contains all the text content from the Le Soula website organized by section for easy editing.
+Both English and French versions are included.
+
+========================================================
+NAVIGATION
+========================================================
+
+ENGLISH:
+- Wines
+- Story
+- Terroir
+- Journal
+- Visit
+
+FRENCH:
+- Vins
+- Histoire
+- Terroir
+- Journal
+- Visite
+
+========================================================
+HERO SECTION
+========================================================
+
+ENGLISH:
+Title: High-altitude wines from the Fenouillèdes
+Tagline: Organic vineyards at elevation. Schist and granite. Freshness with depth.
+Primary Button: Explore the wines
+Secondary Button: Our story
+
+FRENCH:
+Title: Vins d'altitude des Fenouillèdes
+Tagline: Vignobles biologiques en altitude. Schiste et granit. Fraîcheur et profondeur.
+Primary Button: Découvrir les vins
+Secondary Button: Notre histoire
+
+========================================================
+WINES SECTION
+========================================================
+
+ENGLISH:
+Title: The Wines
+Copy: Schist and granite shape precision and lift. Whites with texture; reds with energy.
+
+FRENCH:
+Title: Les Vins
+Copy: Schiste et granit façonnent précision et élévation. Blancs texturés ; rouges énergiques.
+
+========================================================
+INDIVIDUAL WINE DESCRIPTIONS
+========================================================
+
+LE SOULA BLANC
+--------------
+ENGLISH:
+Name: Le Soula Blanc
+Vintage: 2023
+Note: Grenache Gris, Macabeu, Vermentino. Saline precision from altitude. Fresh, mineral, persistent.
+
+Tasting Notes:
+- Sight: Pale gold with brilliant clarity, reflecting mountain purity
+- Nose: White flowers, citrus zest, and mineral stones with hints of Mediterranean herbs
+- Palate: Crisp and elegant with saline minerality, fresh acidity, and a long, pure finish
+
+Awards:
+- Wine Spectator: 92 points (2023)
+- Decanter: 94 points (2023)
+
+Quote: "A wine of remarkable precision and altitude-driven character" - Jancis Robinson MW
+
+FRENCH:
+Name: Le Soula Blanc
+Vintage: 2023
+Note: Grenache Gris, Macabeu, Vermentino. Précision saline de l'altitude. Frais, minéral, persistant.
+
+Tasting Notes:
+- Sight: Or pâle d'une clarté brillante, reflet de la pureté montagnarde
+- Nose: Fleurs blanches, zestes d'agrumes et pierres minérales avec des notes d'herbes méditerranéennes
+- Palate: Net et élégant avec une minéralité saline, une acidité fraîche et une finale longue et pure
+
+Awards:
+- Wine Spectator: 92 points (2023)
+- Decanter: 94 points (2023)
+
+Quote: "Un vin d'une précision remarquable et d'un caractère marqué par l'altitude" - Jancis Robinson MW
+
+LE SOULA ROUGE
+--------------
+ENGLISH:
+Name: Le Soula Rouge
+Vintage: 2022
+Note: Syrah, Carignan from schist soils. Spiced, fresh, mountain-driven. Fine tannins with aromatic lift.
+
+Tasting Notes:
+- Sight: Deep ruby color with purple reflections, expressing mountain intensity
+- Nose: Black pepper, wild herbs, red berries, and underlying schist minerality
+- Palate: Structured yet elegant, with fine-grained tannins and a spicy, persistent finish
+
+Awards:
+- Robert Parker: 95 points (2022)
+- Revue du Vin de France: 17/20 (2022)
+
+Quote: "A masterful expression of high-altitude terroir and organic viticulture" - Michel Bettane
+
+FRENCH:
+Name: Le Soula Rouge
+Vintage: 2022
+Note: Syrah, Carignan sur sols schisteux. Épicé, frais, montagnard. Tanins fins avec élévation aromatique.
+
+Tasting Notes:
+- Sight: Couleur rubis profond aux reflets violacés, exprimant l'intensité montagnarde
+- Nose: Poivre noir, herbes sauvages, fruits rouges et minéralité schisteuse sous-jacente
+- Palate: Structuré mais élégant, avec des tanins fins et une finale épicée et persistante
+
+Awards:
+- Robert Parker: 95 points (2022)
+- Revue du Vin de France: 17/20 (2022)
+
+Quote: "Une expression magistrale du terroir d'altitude et de la viticulture biologique" - Michel Bettane
+
+LA MACÉRATION DU SOULA
+----------------------
+ENGLISH:
+Name: La Macération du Soula
+Vintage: 2023
+Note: Extended skin contact. Wild fermentation. Mountain expression in its purest form.
+
+Tasting Notes:
+- Sight: Amber-gold with copper highlights, showcasing extended skin contact
+- Nose: Dried apricots, orange peel, mountain herbs, and complex phenolic depth
+- Palate: Rich texture with tannic structure, wild fermentation character, and extraordinary length
+
+Awards:
+- Natural Wine Company: Outstanding (2023)
+- The World of Fine Wine: Exceptional (2023)
+
+Quote: "A profound meditation on natural winemaking and terroir expression" - Alice Feiring
+
+FRENCH:
+Name: La Macération du Soula
+Vintage: 2023
+Note: Macération pelliculaire prolongée. Fermentation sauvage. Expression montagnarde à l'état pur.
+
+Tasting Notes:
+- Sight: Or ambré aux reflets cuivrés, témoignant de la macération pelliculaire prolongée
+- Nose: Abricots secs, zeste d'orange, herbes de montagne et profondeur phénolique complexe
+- Palate: Texture riche avec structure tannique, caractère de fermentation sauvage et longueur extraordinaire
+
+Awards:
+- Natural Wine Company: Exceptionnel (2023)
+- The World of Fine Wine: Remarquable (2023)
+
+Quote: "Une méditation profonde sur la vinification naturelle et l'expression du terroir" - Alice Feiring
+
+TRIGONE
+-------
+ENGLISH:
+Name: Trigone
+Vintage: Non-Vintage
+Note: Solera-style perpetual blend. Multiple vintages, textural depth. Savoury complexity, remarkable persistence.
+
+Tasting Notes:
+- Sight: Deep golden color with brilliant clarity, reflecting years of patient development
+- Nose: Honeyed complexity, dried fruits, nuts, and subtle oxidative notes from solera aging
+- Palate: Extraordinary depth and concentration, with layers of flavor unfolding endlessly
+
+Awards:
+- Wine & Spirits: 96 points (2024)
+- La Revue du Vin de France: 18/20 (2024)
+
+Quote: "A wine of unprecedented complexity and emotional resonance" - Rajat Parr
+
+FRENCH:
+Name: Trigone
+Vintage: Sans Millésime
+Note: Assemblage perpétuel en solera. Plusieurs millésimes, profondeur texturale. Complexité savoureuse, persistance remarquable.
+
+Tasting Notes:
+- Sight: Couleur dorée profonde d'une clarté brillante, reflet d'années de développement patient
+- Nose: Complexité miellée, fruits secs, noix et notes oxydatives subtiles du vieillissement en solera
+- Palate: Profondeur et concentration extraordinaires, avec des couches de saveurs se déployant à l'infini
+
+Awards:
+- Wine & Spirits: 96 points (2024)
+- La Revue du Vin de France: 18/20 (2024)
+
+Quote: "Un vin d'une complexité et d'une résonance émotionnelle sans précédent" - Rajat Parr
+
+LE ROSÉ DU SOULA
+----------------
+ENGLISH:
+Name: Le Rosé du Soula
+Vintage: 2022
+Note: 100% Syrah from high-altitude terroir. Limited production of 1300 bottles. Biodynamic viticulture with natural vinification.
+
+Tasting Notes:
+- Sight: Delicate salmon pink color with brilliant clarity, reflecting pure mountain expression
+- Nose: Fresh red berries, wild herbs, and mineral precision from granite and gneiss soils
+- Palate: Crisp and elegant with saline minerality, vibrant acidity, and a long, refined finish
+
+Awards:
+- Organic Certification: Certified Bio (2022)
+- Biodynamic Recognition: Outstanding (2022)
+
+Quote: "A rare expression of high-altitude rosé with exceptional purity and precision" - Le Soula Estate
+
+FRENCH:
+Name: Le Rosé du Soula
+Vintage: 2022
+Note: 100% Syrah de terroir d'altitude. Production limitée de 1300 bouteilles. Viticulture biodynamique avec vinification naturelle.
+
+Tasting Notes:
+- Sight: Couleur saumon délicat d'une clarté brillante, reflet d'une expression montagnarde pure
+- Nose: Fruits rouges frais, herbes sauvages et précision minérale des sols granitiques et gneissiques
+- Palate: Net et élégant avec une minéralité saline, une acidité vive et une finale longue et raffinée
+
+Awards:
+- Certification Biologique: Certifié Bio (2022)
+- Reconnaissance Biodynamique: Exceptionnel (2022)
+
+Quote: "Une expression rare de rosé d'altitude avec une pureté et une précision exceptionnelles" - Domaine Le Soula
+
+========================================================
+MACERATION SECTION
+========================================================
+
+ENGLISH:
+Title: La Macération du Soula
+Subtitle: Natural winemaking in the mountains
+
+Paragraph 1: Our maceration process honors the ancient traditions of winemaking while embracing the unique character of our high-altitude terroir.
+
+Paragraph 2: Extended skin contact allows the granite and schist to express themselves fully, creating wines of remarkable depth and mineral precision.
+
+Paragraph 3: No additives, no manipulation—just time, patience, and respect for what the mountain vineyard offers each vintage.
+
+Features:
+- Extended skin maceration
+- Wild yeast fermentation
+- Minimal sulfur additions
+- Gravity-fed cellar work
+
+FRENCH:
+Title: La Macération du Soula
+Subtitle: Vinification naturelle en montagne
+
+Paragraph 1: Notre processus de macération honore les traditions ancestrales de la vinification tout en embrassant le caractère unique de notre terroir d'altitude.
+
+Paragraph 2: Le contact prolongé avec les peaux permet au granit et au schiste de s'exprimer pleinement, créant des vins d'une profondeur et d'une précision minérale remarquables.
+
+Paragraph 3: Aucun additif, aucune manipulation—juste du temps, de la patience, et du respect pour ce que le vignoble de montagne offre à chaque millésime.
+
+Features:
+- Macération pelliculaire prolongée
+- Fermentation aux levures indigènes
+- Ajouts de soufre minimaux
+- Travail de cave par gravité
+
+========================================================
+STORY SECTION
+========================================================
+
+ENGLISH:
+Title: Our Story
+Expand Button: Read Full Story
+Collapse Button: Show Less
+
+Paragraph 1: At Le Soula, the humble bee is more than a visitor to our vines—it's our muse. Tireless, collaborative, and deeply attuned to its environment, the bee embodies everything we believe in: working with nature, respecting its rhythms, and creating something greater than the sum of its parts. In the high foothills of the Eastern Pyrenees, our vineyards hum with this same quiet industry.
+
+Paragraph 2: Le Soula was born in 2001 when visionary winemaker Gérard Gauby, alongside English importers Roy Richards and Mark Walford, recognized the potent potential of the Fenouillèdes terroir—granite-rich, pesticide-free soils kissed by cool mountain air and Southern sun. With 22 hectares spanning altitudes from 350 to 600 meters across Saint Martin de Fenouillet, Feilluns, Saint Arnac, and Le Vivier, we embraced biodynamic viticulture from the outset, guided by lunar cycles and natural composts.
+
+Paragraph 3: By 2008, a restored co-op cellar in Prugnanes became our winemaking home—perfect for nurturing the elegance and restraint at the heart of Le Soula. That same year, Gérald Standley brought his Bordeaux finesse to the team, steering us toward even greater refinement and character.
+
+Paragraph 4: Today Le Soula is in the hands of Mark Walford and Wendy Wilson, with Wendy running the estate and winemaking. It is a living, breathing ecosystem—where bees pollinate, soils thrive, and wines are crafted with patience. Each bottle is a distillation of place, time, and harmony. Like the bee, we move with purpose, knowing that great things take care, connection, and just the right conditions to flourish.
+
+FRENCH:
+Title: Notre Histoire
+Expand Button: Lire l'Histoire Complète
+Collapse Button: Réduire
+
+Paragraph 1: Au Soula, l'humble abeille n'est pas qu'une visiteuse de nos vignes—c'est notre muse. Infatigable, collaborative et profondément à l'écoute de son environnement, l'abeille incarne tout ce en quoi nous croyons : travailler avec la nature, respecter ses rythmes et créer quelque chose de plus grand que la somme de ses parties. Dans les contreforts orientaux des Pyrénées, nos vignobles bourdonnent de cette même industrie silencieuse.
+
+Paragraph 2: Le Soula est né en 2001 quand le vigneron visionnaire Gérard Gauby, aux côtés des importateurs anglais Roy Richards et Mark Walford, a reconnu le potentiel puissant du terroir des Fenouillèdes—sols riches en granit, sans pesticides, caressés par l'air frais des montagnes et le soleil du Sud. Avec 22 hectares s'étendant de 350 à 600 mètres d'altitude sur Saint Martin de Fenouillet, Feilluns, Saint Arnac et Le Vivier, nous avons embrassé la viticulture biodynamique dès le début, guidés par les cycles lunaires et les composts naturels.
+
+Paragraph 3: En 2008, une cave coopérative restaurée à Prugnanes devient notre foyer viticole—parfaite pour cultiver l'élégance et la retenue au cœur du Soula. La même année, Gérald Standley apporte sa finesse bordelaise à l'équipe, nous orientant vers encore plus de raffinement et de caractère.
+
+Paragraph 4: Aujourd'hui, Le Soula est entre les mains de Mark Walford et Wendy Wilson, avec Wendy dirigeant le domaine et la vinification. C'est un écosystème vivant et respirant—où les abeilles pollinisent, les sols prospèrent et les vins sont élaborés avec patience. Chaque bouteille est une distillation de lieu, de temps et d'harmonie. Comme l'abeille, nous agissons avec intention, sachant que les grandes choses demandent du soin, de la connexion et les bonnes conditions pour s'épanouir.
+
+========================================================
+TERROIR SECTION
+========================================================
+
+ENGLISH:
+Title: Terroir
+Elevation: Elevation: 400–700 m
+Soils: Soils: schist, granite
+Farming: Farming: organic (certified), hand harvested
+Climate: Climate: mountain influence; Tramontane wind
+Call to Action: Read more about our terroir →
+
+FRENCH:
+Title: Terroir
+Elevation: Altitude : 400–700 m
+Soils: Sols : schiste, granit
+Farming: Viticulture : biologique (certifiée), vendanges manuelles
+Climate: Climat : influence montagnarde ; vent de Tramontane
+Call to Action: En savoir plus sur notre terroir →
+
+========================================================
+JOURNAL SECTION
+========================================================
+
+ENGLISH:
+Title: Journal
+Copy: Short dispatches from the vineyard and cellar.
+
+FRENCH:
+Title: Journal
+Copy: Nouvelles brèves du vignoble et de la cave.
+
+FALLBACK JOURNAL ENTRIES (when Ghost CMS is not available):
+---------------------------------------------------------
+
+Entry 1:
+Title: Spring in the high valleys
+Excerpt: Cover crops flourishing after late spring rains bring life to the terraces.
+
+Entry 2:
+Title: Coup de Cœur
+Excerpt: Our wines gain accolades in this year's "La Revue du Vin".
+
+Entry 3:
+Title: Harvest notes
+Excerpt: Cool nights; measured ripening; vivid acidity preserved in the final wines.
+
+========================================================
+SOCIAL SECTION
+========================================================
+
+ENGLISH:
+Title: Social
+Copy: Follow our journey through the seasons, from vineyard to cellar.
+Call to Action: Follow @lesoulawine
+
+FRENCH:
+Title: Social
+Copy: Suivez notre parcours à travers les saisons, du vignoble à la cave.
+Call to Action: Suivre @lesoulawine
+
+========================================================
+VISIT SECTION
+========================================================
+
+ENGLISH:
+Title: Visit
+Copy: By appointment only. We welcome trade and press visits to experience our high-altitude terroir firsthand.
+Primary Call to Action: Book a tasting
+Secondary Call to Action: Find stockists
+
+FRENCH:
+Title: Visite
+Copy: Sur rendez-vous uniquement. Nous accueillons les visites professionnelles et presse pour découvrir notre terroir d'altitude.
+Primary Call to Action: Réserver une dégustation
+Secondary Call to Action: Trouver des revendeurs
+
+========================================================
+LOCATION SECTION
+========================================================
+
+ENGLISH:
+Title: Find Us
+Copy: Located in the heart of the Fenouillèdes, our vineyards sit at high altitude on ancient schist and granite soils.
+
+FRENCH:
+Title: Nous Trouver
+Copy: Situés au cœur des Fenouillèdes, nos vignobles s'élèvent en altitude sur d'anciens sols de schiste et de granit.
+
+========================================================
+CONTACT SECTION
+========================================================
+
+ENGLISH:
+Title: Stay Connected
+Subtitle: Join our community for vineyard updates, tasting events, and exclusive releases.
+Email Placeholder: Enter your email address
+Submit Button: Subscribe
+Sending State: Sending...
+Success Title: Success!
+Success Message: Thank you for subscribing to our newsletter.
+Error Title: Error
+Error Message: Something went wrong. Please try again.
+Email Error: Please enter a valid email address.
+Privacy Notice: We respect your privacy and will never share your email address.
+
+FRENCH:
+Title: Restez Connecté
+Subtitle: Rejoignez notre communauté pour les nouvelles du vignoble, événements de dégustation, et sorties exclusives.
+Email Placeholder: Entrez votre adresse email
+Submit Button: S'abonner
+Sending State: Envoi...
+Success Title: Succès !
+Success Message: Merci de vous être abonné à notre newsletter.
+Error Title: Erreur
+Error Message: Quelque chose s'est mal passé. Veuillez réessayer.
+Email Error: Veuillez entrer une adresse email valide.
+Privacy Notice: Nous respectons votre vie privée et ne partagerons jamais votre adresse email.
+
+========================================================
+FOOTER
+========================================================
+
+ENGLISH:
+Back to top ↑
+
+FRENCH:
+Retour en haut ↑
+
+========================================================
+END OF DOCUMENT
+========================================================
+
+This document contains all the text content from your Le Soula website. You can edit any section and provide the updated text for implementation on the site.
