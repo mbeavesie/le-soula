@@ -1,8 +1,6 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-// @ts-ignore
-import GhostContentAPI from '@tryghost/content-api';
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Instagram posts endpoint
@@ -59,74 +57,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json({ posts });
     } catch (error) {
       res.status(500).json({ error: 'Failed to fetch Instagram posts' });
-    }
-  });
-
-  // Ghost blog posts endpoint
-  app.get("/api/ghost-posts", async (req, res) => {
-    try {
-      const ghostUrl = process.env.GHOST_URL;
-      const ghostKey = process.env.GHOST_CONTENT_KEY;
-
-      if (!ghostUrl || !ghostKey) {
-        // Return fallback content if Ghost is not configured
-        return res.json({
-          posts: [
-            {
-              id: 'fallback-1',
-              title: 'Spring in the high valleys',
-              slug: 'spring-valleys',
-              excerpt: 'Cover crops flourishing after late spring rains bring life to the terraces.',
-              feature_image: '/api/assets/vineyard-spring.jpg',
-              published_at: '2025-04-15T10:00:00.000Z',
-              url: '#',
-              html: '<p>Cover crops flourishing after late spring rains bring life to the terraces.</p>'
-            },
-            {
-              id: 'fallback-2', 
-              title: 'Coup de Cœur',
-              slug: 'coup-de-coeur',
-              excerpt: 'Our wines gain accolades in this year\'s "La Revue du Vin".',
-              feature_image: '/api/assets/awards.jpg',
-              published_at: '2025-01-30T10:00:00.000Z',
-              url: '#',
-              html: '<p>Our wines gain accolades in this year\'s "La Revue du Vin".</p>'
-            },
-            {
-              id: 'fallback-3',
-              title: 'Harvest notes',
-              slug: 'harvest-notes',
-              excerpt: 'Cool nights; measured ripening; vivid acidity preserved in the final wines.',
-              feature_image: '/api/assets/harvest.jpg',
-              published_at: '2024-10-12T10:00:00.000Z',
-              url: '#',
-              html: '<p>Cool nights; measured ripening; vivid acidity preserved in the final wines.</p>'
-            }
-          ]
-        });
-      }
-
-      // Initialize Ghost API
-      const api = new GhostContentAPI({
-        url: ghostUrl,
-        key: ghostKey,
-        version: 'v5.0'
-      });
-
-      // Fetch posts from Ghost
-      const posts = await api.posts.browse({
-        limit: 6,
-        include: ['tags', 'authors'],
-        filter: 'visibility:public'
-      });
-
-      res.json({ posts });
-    } catch (error) {
-      console.error('Ghost API Error:', error);
-      res.status(500).json({ 
-        error: 'Failed to fetch blog posts',
-        details: error instanceof Error ? error.message : 'Unknown error'
-      });
     }
   });
 

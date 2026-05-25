@@ -2,7 +2,7 @@ import { useParams, Link } from "wouter";
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { useSeo } from "@/hooks/use-seo";
-import { wines } from "@/data/wines";
+import { useWine } from "@/hooks/use-cms";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Download, ArrowLeft } from "lucide-react";
 
@@ -11,8 +11,8 @@ export default function WineDetail() {
   const { currentLanguage, t } = useLanguage();
   const { ref: headerRef } = useScrollReveal<HTMLDivElement>();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  const wine = wines.find(w => w.slug === slug);
+
+  const { data: wine, isLoading } = useWine(slug);
   const wineContent = wine ? wine[currentLanguage as 'en' | 'fr'] : null;
 
   useSeo({
@@ -33,6 +33,14 @@ export default function WineDetail() {
     document.documentElement.lang = currentLanguage;
   }, [slug, currentLanguage]);
   
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-paper">
+        <div className="text-stone-500">Loading…</div>
+      </div>
+    );
+  }
+
   if (!wine) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-paper">
@@ -165,7 +173,7 @@ export default function WineDetail() {
                     {currentLanguage === 'en' ? 'Awards & Recognition' : 'Distinctions'}
                   </h3>
                   <div className="grid gap-3">
-                    {content.awards.map((award, index) => (
+                    {content.awards.map((award: { title: string; year: string; score: string }, index: number) => (
                       <div 
                         key={index}
                         className="flex items-center justify-between bg-white rounded-xl p-4 sophisticated-border"

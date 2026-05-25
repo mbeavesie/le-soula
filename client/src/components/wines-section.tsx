@@ -1,13 +1,9 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import { wines } from "@/data/wines";
+import { useWines, type UIWine } from "@/hooks/use-cms";
 import { Link } from "wouter";
 
-interface WineCardProps {
-  wine: typeof wines[0];
-}
-
-function WineCard({ wine }: WineCardProps) {
+function WineCard({ wine }: { wine: UIWine }) {
   const { currentLanguage } = useLanguage();
   const { ref } = useScrollReveal<HTMLDivElement>();
   const content = wine[currentLanguage as 'en' | 'fr'];
@@ -49,6 +45,7 @@ function WineCard({ wine }: WineCardProps) {
 export default function WinesSection() {
   const { t } = useLanguage();
   const { ref: headerRef } = useScrollReveal<HTMLDivElement>();
+  const { data: wines = [] } = useWines();
 
   return (
     <section id="wines" className="py-32 border-t border-stone-200/50 mt-20">
@@ -60,7 +57,7 @@ export default function WinesSection() {
           {t('wines.copy')}
         </p>
       </div>
-      
+
       <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {wines.map((wine) => (
           <WineCard key={wine.slug} wine={wine} />

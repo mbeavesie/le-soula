@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
-import { translations } from "../data/translations";
+import { translations as fallbackTranslations } from "../data/translations";
+import { useTranslations } from "@/hooks/use-cms";
 
 type Language = 'en' | 'fr';
 
@@ -17,9 +18,9 @@ interface LanguageProviderProps {
 
 export function LanguageProvider({ children }: LanguageProviderProps) {
   const [currentLanguage, setCurrentLanguage] = useState<Language>('en');
+  const { data: cmsTranslations } = useTranslations();
 
   useEffect(() => {
-    // Check for saved language or browser preference
     const savedLang = localStorage.getItem('language') as Language;
     const browserLang = navigator.language.startsWith('fr') ? 'fr' : 'en';
     const initialLang = savedLang || browserLang;
@@ -33,13 +34,12 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
   };
 
   const t = (key: string): string => {
+    const source = cmsTranslations || fallbackTranslations;
     const keys = key.split('.');
-    let value: any = translations[currentLanguage];
-    
+    let value: any = (source as any)[currentLanguage];
     for (const k of keys) {
       value = value?.[k];
     }
-    
     return value || key;
   };
 
