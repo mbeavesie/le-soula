@@ -249,20 +249,20 @@ async function seedTranslations() {
   const t = translationsMod.translations
   const enFlat = flatten(t.en)
   const frFlat = flatten(t.fr)
-  const keys = new Set([...Object.keys(enFlat), ...Object.keys(frFlat)])
-  let n = 0
+  const keys = Array.from(new Set([...Object.keys(enFlat), ...Object.keys(frFlat)]))
+  let tx = client.transaction()
   for (const key of keys) {
     const safeId = 'tr-' + key.replace(/[^a-zA-Z0-9]/g, '-')
-    await client.createOrReplace({
+    tx = tx.createOrReplace({
       _id: safeId,
       _type: 'translation',
       key,
       en: enFlat[key] || '',
       fr: frFlat[key] || enFlat[key] || '',
     })
-    n++
   }
-  console.log(`  ✓ ${n} translation entries`)
+  await tx.commit()
+  console.log(`  ✓ ${keys.length} translation entries`)
 }
 
 async function main() {
