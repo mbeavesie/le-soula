@@ -143,7 +143,7 @@ export default function WineDetail() {
             </div>
             
             {/* Wine Information */}
-            <div ref={headerRef} className="reveal">
+            <div ref={headerRef}>
               <div className="mb-8">
                 <h1 className="font-serif text-5xl font-light text-ink mb-4 leading-tight">
                   {content.name}
