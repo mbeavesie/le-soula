@@ -1,6 +1,7 @@
 import { useParams, Link } from "wouter";
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import { useSeo } from "@/hooks/use-seo";
 import { wines } from "@/data/wines";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Download, ArrowLeft } from "lucide-react";
@@ -12,12 +13,25 @@ export default function WineDetail() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const wine = wines.find(w => w.slug === slug);
-  
+  const wineContent = wine ? wine[currentLanguage as 'en' | 'fr'] : null;
+
+  useSeo({
+    title: wineContent
+      ? `${wineContent.name} — Le Soula`
+      : currentLanguage === 'fr' ? 'Vin introuvable — Le Soula' : 'Wine not found — Le Soula',
+    description: wineContent?.note?.slice(0, 200),
+    image: wine?.images?.[0],
+    url: wine ? `https://lesoula.com/wine/${wine.slug}` : 'https://lesoula.com/',
+    type: 'product',
+    locale: currentLanguage === 'fr' ? 'fr_FR' : 'en_US',
+  });
+
   // Position at top and reset carousel when component mounts or slug changes
   useEffect(() => {
     window.scrollTo(0, 0);
     setCurrentImageIndex(0);
-  }, [slug]);
+    document.documentElement.lang = currentLanguage;
+  }, [slug, currentLanguage]);
   
   if (!wine) {
     return (

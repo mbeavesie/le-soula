@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { useLanguage } from "@/hooks/use-language";
+import { useSeo } from "@/hooks/use-seo";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import WinesSection from "@/components/wines-section";
@@ -12,11 +14,31 @@ import MapSection from "@/components/map-section";
 import Footer from "@/components/footer";
 
 export default function Home() {
+  const { currentLanguage } = useLanguage();
+
+  useSeo(
+    currentLanguage === 'fr'
+      ? {
+          title: 'Le Soula — Vins d\'altitude bio des Fenouillèdes',
+          description: 'Le Soula élabore des vins d\'altitude bio et biodynamiques sur sols de schiste et de granite dans les Fenouillèdes. Découvrez nos cuvées blanc, rouge, rosé et Trigone.',
+          image: 'https://lesoula.com/og-image.jpg',
+          url: 'https://lesoula.com/',
+          type: 'website',
+          locale: 'fr_FR',
+        }
+      : {
+          title: 'Le Soula — High-Altitude Organic Wines from the Fenouillèdes',
+          description: 'Le Soula crafts high-altitude organic and biodynamic wines on schist and granite soils in the Fenouillèdes, French Pyrenees. Discover the estate\'s white, red, rosé and Trigone cuvées.',
+          image: 'https://lesoula.com/og-image.jpg',
+          url: 'https://lesoula.com/',
+          type: 'website',
+          locale: 'en_US',
+        }
+  );
+
   useEffect(() => {
-    // Set document language based on current language
-    const lang = localStorage.getItem('language') || 'en';
-    document.documentElement.lang = lang;
-  }, []);
+    document.documentElement.lang = currentLanguage;
+  }, [currentLanguage]);
 
   return (
     <div className="min-h-screen bg-paper">
