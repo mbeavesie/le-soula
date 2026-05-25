@@ -27,7 +27,7 @@ export default function VisitSection() {
             <span className="tracking-wide">{t('visit.stockists')}</span>
           </a>
           <a
-            href="mailto:hello@lesoula.com"
+            href="mailto:info@le-soula.com"
             className="group inline-flex items-center justify-center rounded-3xl border border-stone-300/50 px-10 py-5 text-base font-medium text-stone-600 hover:bg-honey-50 hover:border-honey-300 hover:text-honey-700 transition-all duration-500"
             data-testid="link-visit-email"
           >
