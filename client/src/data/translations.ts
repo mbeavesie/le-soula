@@ -58,7 +58,8 @@ export const translations = {
       title: 'Visit',
       copy: 'By appointment only. We welcome trade and press visits to experience our high-altitude terroir firsthand.',
       cta: 'Book a tasting',
-      stockists: 'Find stockists'
+      stockists: 'Find stockists',
+      stockistsHint: 'Available at fine wine shops and restaurants worldwide'
     },
     location: {
       title: 'Find Us',
@@ -140,7 +141,8 @@ export const translations = {
       title: 'Visite',
       copy: 'Sur rendez-vous uniquement. Nous accueillons les visites professionnelles et presse pour découvrir notre terroir d\'altitude.',
       cta: 'Réserver une dégustation',
-      stockists: 'Trouver des revendeurs'
+      stockists: 'Trouver des revendeurs',
+      stockistsHint: 'Disponible chez les cavistes et restaurants du monde entier'
     },
     location: {
       title: 'Nous Trouver',

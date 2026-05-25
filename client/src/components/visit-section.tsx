@@ -1,3 +1,4 @@
+import { ShoppingBag, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
@@ -14,26 +15,29 @@ export default function VisitSection() {
         <p className="text-xl text-stone-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
           {t('visit.copy')}
         </p>
-        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <a
+            href="https://www.wine-searcher.com/find/le+soula"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center justify-center rounded-3xl bg-honey-600 px-10 py-5 text-base font-medium text-white shadow-lg shadow-honey-600/20 hover:bg-honey-700 hover:shadow-xl hover:shadow-honey-600/30 hover:-translate-y-0.5 transition-all duration-500"
+            data-testid="link-stockists"
+          >
+            <ShoppingBag className="mr-3 w-4 h-4" />
+            <span className="tracking-wide">{t('visit.stockists')}</span>
+          </a>
           <a
             href="mailto:hello@lesoula.com"
             className="group inline-flex items-center justify-center rounded-3xl border border-stone-300/50 px-10 py-5 text-base font-medium text-stone-600 hover:bg-honey-50 hover:border-honey-300 hover:text-honey-700 transition-all duration-500"
+            data-testid="link-visit-email"
           >
             <span className="tracking-wide">{t('visit.cta')}</span>
-            <svg className="ml-3 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
-          <a
-            href="#"
-            className="group inline-flex items-center justify-center rounded-3xl border border-stone-300/50 px-10 py-5 text-base font-medium text-stone-600 hover:bg-honey-50 hover:border-honey-300 hover:text-honey-700 transition-all duration-500"
-          >
-            <span className="tracking-wide">{t('visit.stockists')}</span>
-            <svg className="ml-3 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
+            <ArrowRight className="ml-3 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
           </a>
         </div>
+        <p className="mt-8 text-sm text-stone-500 font-light tracking-wide">
+          {t('visit.stockistsHint')}
+        </p>
       </div>
     </section>
   );
