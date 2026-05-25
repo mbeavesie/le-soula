@@ -5,7 +5,8 @@ export const translations = {
       story: 'Story',
       terroir: 'Terroir',
       journal: 'Journal',
-      visit: 'Visit'
+      visit: 'Visit',
+      buy: 'Buy'
     },
     hero: {
       title: 'High-altitude wines from the Fenouillèdes',
@@ -61,6 +62,12 @@ export const translations = {
       stockists: 'Find stockists',
       stockistsHint: 'Available at fine wine shops and restaurants worldwide'
     },
+    buy: {
+      title: 'Buy Le Soula',
+      copy: 'Our wines are stocked by independent merchants and fine restaurants around the world. Find a stockist near you with one click.',
+      cta: 'Buy Le Soula',
+      hint: 'Powered by Wine-Searcher — opens in a new tab'
+    },
     location: {
       title: 'Find Us',
       copy: 'Located in the heart of the Fenouillèdes, our vineyards sit at high altitude on ancient schist and granite soils.'
@@ -88,7 +95,8 @@ export const translations = {
       story: 'Histoire',
       terroir: 'Terroir',
       journal: 'Journal',
-      visit: 'Visite'
+      visit: 'Visite',
+      buy: 'Acheter'
     },
     hero: {
       title: 'Vins d\'altitude des Fenouillèdes',
@@ -143,6 +151,12 @@ export const translations = {
       cta: 'Réserver une dégustation',
       stockists: 'Trouver des revendeurs',
       stockistsHint: 'Disponible chez les cavistes et restaurants du monde entier'
+    },
+    buy: {
+      title: 'Acheter Le Soula',
+      copy: 'Nos vins sont distribués par des cavistes indépendants et des restaurants de qualité partout dans le monde. Trouvez un revendeur près de chez vous en un clic.',
+      cta: 'Acheter Le Soula',
+      hint: 'Propulsé par Wine-Searcher — ouvre dans un nouvel onglet'
     },
     location: {
       title: 'Nous Trouver',

@@ -59,6 +59,15 @@ export default function Header() {
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-honey-500 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
+              <li>
+                <a
+                  className="inline-flex items-center rounded-full bg-honey-600 px-5 py-2 text-white shadow-md shadow-honey-600/20 hover:bg-honey-700 hover:shadow-lg hover:shadow-honey-600/30 hover:-translate-y-0.5 transition-all duration-300"
+                  href="#buy"
+                  data-testid="nav-buy"
+                >
+                  {t('nav.buy')}
+                </a>
+              </li>
             </ul>
           </nav>
           
@@ -122,6 +131,14 @@ export default function Header() {
                 onClick={closeMobileMenu}
               >
                 {t('nav.visit')}
+              </a>
+              <a
+                className="mt-2 inline-flex items-center rounded-full bg-honey-600 px-5 py-2.5 font-medium text-white shadow-md shadow-honey-600/20 hover:bg-honey-700 transition-all duration-300"
+                href="#buy"
+                onClick={closeMobileMenu}
+                data-testid="nav-buy-mobile"
+              >
+                {t('nav.buy')}
               </a>
             </nav>
           </div>

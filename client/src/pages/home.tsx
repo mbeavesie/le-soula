@@ -7,6 +7,7 @@ import WinesSection from "@/components/wines-section";
 import StorySection from "@/components/story-section";
 import TerroirSection from "@/components/terroir-section";
 import JournalSection from "@/components/journal-section";
+import BuySection from "@/components/buy-section";
 import SocialSection from "@/components/social-section";
 import ContactSection from "@/components/contact-section";
 import VisitSection from "@/components/visit-section";
@@ -49,6 +50,7 @@ export default function Home() {
         <StorySection />
         <TerroirSection />
         <JournalSection />
+        <BuySection />
         <SocialSection />
         <ContactSection />
         <VisitSection />
