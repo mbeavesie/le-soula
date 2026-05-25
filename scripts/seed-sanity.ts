@@ -201,7 +201,7 @@ async function seedJournal(entries: any[]) {
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/^-|-$/g, '')
     const doc: any = {
-      _id: `journal-${slug}-${i}`,
+      _id: `journal-${slug}`,
       _type: 'journalPost',
       slug: { _type: 'slug', current: slug },
       title: { en: j.en.title, fr: j.fr.title },

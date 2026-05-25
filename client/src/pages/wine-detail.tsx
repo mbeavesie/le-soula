@@ -92,12 +92,18 @@ export default function WineDetail() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Image Carousel */}
             <div className="relative">
-              <div className="relative aspect-square overflow-hidden rounded-3xl sophisticated-border luxury-shadow">
-                <img
-                  src={wine.images[currentImageIndex]}
-                  alt={`${content.name} - Image ${currentImageIndex + 1}`}
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative aspect-square overflow-hidden rounded-3xl sophisticated-border luxury-shadow bg-stone-100">
+                {wine.images.length > 0 ? (
+                  <img
+                    src={wine.images[currentImageIndex] || wine.images[0]}
+                    alt={`${content.name} - Image ${currentImageIndex + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-stone-400 font-light">
+                    {content.name}
+                  </div>
+                )}
                 
                 {/* Navigation Buttons */}
                 {wine.images.length > 1 && (

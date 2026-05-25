@@ -142,8 +142,8 @@ export type UIStoryParagraph = {
   id: string
   order: number
   img?: string
-  alt: string
-  caption: string
+  alt: { en: string; fr: string }
+  caption: { en: string; fr: string }
   en: string
   fr: string
 }
@@ -159,8 +159,14 @@ export function useStoryParagraphs() {
           id: p._id,
           order: p.order,
           img: p.image,
-          alt: p.imageAlt?.en || '',
-          caption: p.caption?.en || '',
+          alt: {
+            en: p.imageAlt?.en || '',
+            fr: p.imageAlt?.fr || p.imageAlt?.en || '',
+          },
+          caption: {
+            en: p.caption?.en || '',
+            fr: p.caption?.fr || p.caption?.en || '',
+          },
           en: p.body?.en || '',
           fr: p.body?.fr || p.body?.en || '',
         }))

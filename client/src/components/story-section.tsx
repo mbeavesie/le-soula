@@ -21,12 +21,13 @@ export default function StorySection() {
   const { data: cmsParagraphs } = useStoryParagraphs();
 
   // Build the paragraphs to render: prefer CMS data, fall back to translation keys + static images
+  const lang = currentLanguage as 'en' | 'fr';
   const paragraphs = (cmsParagraphs && cmsParagraphs.length > 0)
     ? cmsParagraphs.map((p, i) => ({
-        text: p[currentLanguage as 'en' | 'fr'] || p.en,
+        text: p[lang] || p.en,
         img: p.img || FALLBACK_IMAGES[i]?.src,
-        alt: p.alt || FALLBACK_IMAGES[i]?.alt || '',
-        caption: p.caption || FALLBACK_IMAGES[i]?.caption || '',
+        alt: p.alt[lang] || p.alt.en || FALLBACK_IMAGES[i]?.alt || '',
+        caption: p.caption[lang] || p.caption.en || FALLBACK_IMAGES[i]?.caption || '',
       }))
     : [1, 2, 3, 4].map((n, i) => ({
         text: t(`story.p${n}`),
