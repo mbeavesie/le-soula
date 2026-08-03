@@ -22,16 +22,16 @@ export default function Home() {
       ? {
           title: 'Le Soula — Vins d\'altitude bio des Fenouillèdes',
           description: 'Le Soula élabore des vins d\'altitude bio et biodynamiques sur sols de schiste et de granite dans les Fenouillèdes. Découvrez nos cuvées blanc, rouge, rosé et Trigone.',
-          image: 'https://lesoula.com/og-image.jpg',
-          url: 'https://lesoula.com/',
+          image: 'https://www.le-soula.com/og-image.jpg',
+          url: 'https://www.le-soula.com/',
           type: 'website',
           locale: 'fr_FR',
         }
       : {
           title: 'Le Soula — High-Altitude Organic Wines from the Fenouillèdes',
           description: 'Le Soula crafts high-altitude organic and biodynamic wines on schist and granite soils in the Fenouillèdes, French Pyrenees. Discover the estate\'s white, red, rosé and Trigone cuvées.',
-          image: 'https://lesoula.com/og-image.jpg',
-          url: 'https://lesoula.com/',
+          image: 'https://www.le-soula.com/og-image.jpg',
+          url: 'https://www.le-soula.com/',
           type: 'website',
           locale: 'en_US',
         }

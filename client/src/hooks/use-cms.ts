@@ -16,16 +16,24 @@ import { journalEntries as fallbackJournal } from '@/data/journal'
 import { translations as fallbackTranslations } from '@/data/translations'
 
 // Wines: normalize Sanity payload to the shape the UI already uses
+export type UIVintage = {
+  label: string
+  techSheetFr?: string
+  techSheetEn?: string
+}
+
 export type UIWine = {
   slug: string
   img: string
   tech: string
   images: string[]
+  vintages?: UIVintage[]
   en: any
   fr: any
 }
 
 function wineFromSanity(w: SanityWine): UIWine {
+  const fb = (fallbackWines as any[]).find((f) => f.slug === w.slug)
   const mk = (lang: 'en' | 'fr') => ({
     name: w.name?.[lang] || w.name?.en || '',
     vintage: w.vintage || '',
@@ -47,9 +55,10 @@ function wineFromSanity(w: SanityWine): UIWine {
   })
   return {
     slug: w.slug,
-    img: w.mainImage || w.gallery?.[0] || '',
-    tech: w.techSheetUrl || '#',
-    images: (w.gallery && w.gallery.length ? w.gallery : w.mainImage ? [w.mainImage] : []) as string[],
+    img: w.mainImage || w.gallery?.[0] || fb?.img || '',
+    tech: w.techSheetUrl || w.vintages?.[0]?.techSheetEn || w.vintages?.[0]?.techSheetFr || fb?.tech || '#',
+    vintages: w.vintages || [],
+    images: ((w.gallery && w.gallery.length ? w.gallery : w.mainImage ? [w.mainImage] : fb?.images) || []) as string[],
     en: mk('en'),
     fr: mk('fr'),
   }

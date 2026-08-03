@@ -13,8 +13,8 @@ const DEFAULTS = {
   title: "Le Soula — High-Altitude Organic Wines from the Fenouillèdes",
   description:
     "Le Soula crafts high-altitude organic and biodynamic wines on schist and granite soils in the Fenouillèdes, French Pyrenees.",
-  image: "https://lesoula.com/og-image.jpg",
-  url: "https://lesoula.com/",
+  image: "https://www.le-soula.com/og-image.jpg",
+  url: "https://www.le-soula.com/",
   type: "website",
   locale: "en_US" as const,
 };

@@ -21,7 +21,32 @@ export default defineType({
       type: 'array',
       of: [{type: 'image', options: {hotspot: true}}],
     }),
-    defineField({name: 'techSheetUrl', title: 'Tech sheet URL', type: 'url'}),
+    defineField({name: 'techSheetUrl', title: 'Tech sheet URL (legacy, current vintage)', type: 'url'}),
+    defineField({
+      name: 'vintages',
+      title: 'Vintages / Millésimes',
+      description: 'All vintages of this wine, newest first. Each can carry its technical sheet in both languages. / Tous les millésimes, du plus récent au plus ancien, avec fiche technique dans les deux langues.',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          name: 'vintageEntry',
+          title: 'Vintage / Millésime',
+          fields: [
+            defineField({
+              name: 'label',
+              title: 'Vintage or cuvée number / Millésime ou n° de cuvée',
+              description: 'e.g. "2021" or "N°23"',
+              type: 'string',
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({name: 'techSheetFr', title: 'Fiche technique (FR)', type: 'file', options: {accept: 'application/pdf'}}),
+            defineField({name: 'techSheetEn', title: 'Technical sheet (EN)', type: 'file', options: {accept: 'application/pdf'}}),
+          ],
+          preview: {select: {title: 'label'}},
+        },
+      ],
+    }),
     defineField({name: 'note', type: 'localeText'}),
     defineField({name: 'tastingNotes', type: 'tastingNotes'}),
     defineField({name: 'awards', type: 'array', of: [{type: 'award'}]}),

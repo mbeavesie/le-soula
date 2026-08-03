@@ -4,6 +4,11 @@ export const winesQuery = `*[_type == "wine"] | order(order asc, name.en asc) {
   "mainImage": mainImage.asset->url,
   "gallery": gallery[].asset->url,
   "techSheetUrl": techSheetUrl,
+  "vintages": vintages[]{
+    label,
+    "techSheetFr": techSheetFr.asset->url,
+    "techSheetEn": techSheetEn.asset->url
+  },
   tastingNotes, awards
 }`
 
@@ -13,6 +18,11 @@ export const wineBySlugQuery = `*[_type == "wine" && slug.current == $slug][0] {
   "mainImage": mainImage.asset->url,
   "gallery": gallery[].asset->url,
   "techSheetUrl": techSheetUrl,
+  "vintages": vintages[]{
+    label,
+    "techSheetFr": techSheetFr.asset->url,
+    "techSheetEn": techSheetEn.asset->url
+  },
   tastingNotes, awards
 }`
 
@@ -30,6 +40,11 @@ export const storyParagraphsQuery = `*[_type == "storyParagraph"] | order(order 
 export const translationsQuery = `*[_type == "translation"]{ key, en, fr }`
 
 export type LocaleString = { en?: string; fr?: string }
+export type SanityVintage = {
+  label: string
+  techSheetFr?: string
+  techSheetEn?: string
+}
 export type SanityWine = {
   slug: string
   name: LocaleString
@@ -40,6 +55,7 @@ export type SanityWine = {
   mainImage?: string
   gallery?: string[]
   techSheetUrl?: string
+  vintages?: SanityVintage[]
   tastingNotes?: {
     sight?: LocaleString
     nose?: LocaleString

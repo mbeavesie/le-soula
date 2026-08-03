@@ -1,0 +1,359 @@
+{
+ "blanc": {
+  "2001": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 01.pdf",
+   "en": "Soula_Blanc/Technical fiche - Soula White 01.pdf"
+  },
+  "2002": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 02.pdf",
+   "en": "Soula_Blanc/Technical fiche - Soula White 02.pdf"
+  },
+  "2003": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 03.pdf",
+   "en": "Soula_Blanc/Technical fiche - Soula White 03.pdf"
+  },
+  "2004": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 04.pdf",
+   "en": "Soula_Blanc/Technical fiche - Soula White 04.pdf"
+  },
+  "2005": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 05.pdf",
+   "en": "Soula_Blanc/Technical fiche - Soula White 05.pdf"
+  },
+  "2006": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 06.pdf",
+   "en": "Soula_Blanc/Technical fiche - Soula White 06.pdf"
+  },
+  "2007": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 07.pdf",
+   "en": "Soula_Blanc/Technical fiche - Soula White 07.pdf"
+  },
+  "2008": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 08.pdf",
+   "en": "Soula_Blanc/Technical fiche - Soula White 08.pdf"
+  },
+  "2009": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 09.pdf",
+   "en": "Soula_Blanc/Technical fiche - Soula White 09.pdf"
+  },
+  "2010": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 10.pdf",
+   "en": "Soula_Blanc/Technical fiche - Soula White 10.pdf"
+  },
+  "2011": {
+   "fr": "Soula_Blanc/Fiche technique Soula Blanc 11.pdf",
+   "en": "documents/actualites/technical-fiche---soula-white-11.pdf"
+  },
+  "2013": {
+   "fr": "documents/actualites/-soula-blanc-2013-(1).pdf",
+   "en": "documents/actualites/-soula-white-2013-(1).pdf"
+  },
+  "2012": {
+   "fr": "documents/actualites/fiche-technique-soula-blanc-12.pdf",
+   "en": "documents/actualites/technical-fiche---soula-white-12.pdf"
+  },
+  "2014": {
+   "fr": "documents/actualites/soula-blanc-2014.pdf",
+   "en": "documents/actualites/soula-white-2014.pdf"
+  },
+  "2015": {
+   "fr": "documents/actualites/soula-blanc-2015.pdf",
+   "en": "documents/actualites/soula-white2015.pdf"
+  },
+  "2016": {
+   "fr": "documents/actualites/soula-blanc-2016.pdf",
+   "en": "documents/actualites/soula-white2016.pdf"
+  },
+  "2017": {
+   "fr": "documents/actualites/soula-blanc-2017.pdf",
+   "en": "documents/actualites/soula-white-2017.pdf"
+  },
+  "2018": {
+   "fr": "documents/actualites/soula-blanc-2018.pdf",
+   "en": "documents/actualites/soula-white-2018.pdf"
+  },
+  "2019": {
+   "fr": "documents/actualites/soula-blanc-2019.pdf",
+   "en": "documents/actualites/soula-white-2019.pdf"
+  },
+  "2021": {
+   "fr": "documents/actualites/soula-blanc-2021.pdf",
+   "en": "documents/actualites/soula-white-2021.pdf"
+  }
+ },
+ "rouge": {
+  "2001": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 01.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 01.pdf"
+  },
+  "2002": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 02.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 02.pdf"
+  },
+  "2003": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 03.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 03.pdf"
+  },
+  "2004": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 04.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 04.pdf"
+  },
+  "2005": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 05.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 05.pdf"
+  },
+  "2006": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 06.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 06.pdf"
+  },
+  "2007": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 07.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 07.pdf"
+  },
+  "2008": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 08.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 08.pdf"
+  },
+  "2009": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 09.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 09.pdf"
+  },
+  "2010": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 10.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 10.pdf"
+  },
+  "2011": {
+   "fr": "Soula_Rouge/Fiche technique Soula Rouge 11.pdf",
+   "en": "Soula_Rouge/Technical fiche - Soula Red 11.pdf"
+  },
+  "2012": {
+   "fr": "documents/actualites/fiche-technique-soula-rouge-12.pdf",
+   "en": "documents/actualites/technical-fiche---soula-red-12.pdf"
+  },
+  "2013": {
+   "en": "documents/actualites/soula-red-2013.pdf",
+   "fr": "documents/actualites/soula-rouge-2013.pdf"
+  },
+  "2014": {
+   "en": "documents/actualites/soula-red-2014.pdf",
+   "fr": "documents/actualites/soula-rouge-2014.pdf"
+  },
+  "2015": {
+   "en": "documents/actualites/soula-red-2015.pdf",
+   "fr": "documents/actualites/soula-rouge-2015.pdf"
+  },
+  "2016": {
+   "en": "documents/actualites/soula-red-2016.pdf",
+   "fr": "documents/actualites/soula-rouge-2016.pdf"
+  },
+  "2017": {
+   "en": "documents/actualites/soula-red-2017.pdf",
+   "fr": "documents/actualites/soula-rouge-2017.pdf"
+  },
+  "2018": {
+   "en": "documents/actualites/soula-red-2018.pdf",
+   "fr": "documents/actualites/soula-rouge-2018.pdf"
+  },
+  "2019": {
+   "en": "documents/actualites/soula-red-2019.pdf",
+   "fr": "documents/actualites/soula-rouge-2019.pdf"
+  },
+  "2021": {
+   "en": "documents/actualites/soula-red-2021.pdf",
+   "fr": "documents/actualites/soula-rouge-2021.pdf"
+  }
+ },
+ "trigone-blanc": {
+  "7": {
+   "fr": "Trigone_Blanc/Fiche technique Trigone Blanc 07.pdf",
+   "en": "Trigone_Blanc/Technical fiche - Trigone White 07.pdf"
+  },
+  "10": {
+   "fr": "Trigone_Blanc/Fiche technique Trigone Blanc 10.pdf",
+   "en": "Trigone_Blanc/Technical fiche - Trigone White 10.pdf"
+  },
+  "11": {
+   "fr": "Trigone_Blanc/Fiche technique Trigone Blanc 11.pdf",
+   "en": "Trigone_Blanc/Technical fiche - Trigone White 11.pdf"
+  },
+  "13": {
+   "fr": "Trigone_Blanc/Fiche technique Trigone Blanc 13.pdf",
+   "en": "Trigone_Blanc/Technical fiche - Trigone White 13.pdf"
+  },
+  "14": {
+   "fr": "Trigone_Blanc/Fiche technique Trigone Blanc 14.pdf",
+   "en": "Trigone_Blanc/Technical fiche - Trigone White 14.pdf"
+  },
+  "15": {
+   "fr": "Trigone_Blanc/Fiche technique Trigone Blanc 15.pdf"
+  },
+  "23": {
+   "fr": "documents/actualites/tb23-fr.pdf",
+   "en": "documents/actualites/tb23-gb.pdf"
+  },
+  "25": {
+   "fr": "documents/actualites/tb25-fr.pdf",
+   "en": "documents/actualites/tb25gb.pdf"
+  },
+  "21": {
+   "fr": "documents/actualites/tbxxi---blanc.pdf",
+   "en": "documents/actualites/tbxxi--white.pdf"
+  },
+  "16": {
+   "fr": "documents/actualites/trigone-blanc-16.pdf",
+   "en": "documents/actualites/trigone-white-16.pdf"
+  },
+  "17": {
+   "fr": "documents/actualites/trigone-blanc-17.pdf",
+   "en": "documents/actualites/trigone-white-17.pdf"
+  },
+  "18": {
+   "fr": "documents/actualites/trigone-blanc-numero-18.pdf",
+   "en": "documents/actualites/trigone-white-number-18.pdf"
+  },
+  "19": {
+   "fr": "documents/actualites/trigone-blanc-numero-19.pdf",
+   "en": "documents/actualites/trigone-white-number-19.pdf"
+  },
+  "20": {
+   "fr": "documents/actualites/trigone-blanc-xx.pdf",
+   "en": "documents/actualites/trigone-white-number-xx.pdf"
+  },
+  "22": {
+   "fr": "documents/actualites/tb-2022-fr.pdf",
+   "en": "documents/actualites/tb-2022-gb.pdf"
+  }
+ },
+ "trigone-rouge": {
+  "4": {
+   "fr": "Trigone_Rouge/Fiche technique Trigone Rouge 04.pdf",
+   "en": "Trigone_Rouge/Technical fiche - Trigone Red 04.pdf"
+  },
+  "7": {
+   "fr": "Trigone_Rouge/Fiche technique Trigone Rouge 07.pdf",
+   "en": "Trigone_Rouge/Technical fiche - Trigone Red 07.pdf"
+  },
+  "8": {
+   "fr": "Trigone_Rouge/Fiche technique Trigone Rouge 08.pdf",
+   "en": "Trigone_Rouge/Technical fiche - Trigone Red 08.pdf"
+  },
+  "9": {
+   "fr": "Trigone_Rouge/Fiche technique Trigone Rouge 09.pdf",
+   "en": "Trigone_Rouge/Technical fiche - Trigone Red 09.pdf"
+  },
+  "10": {
+   "fr": "Trigone_Rouge/Fiche technique Trigone Rouge 10.pdf",
+   "en": "Trigone_Rouge/Technical fiche - Trigone Red 10.pdf"
+  },
+  "11": {
+   "fr": "Trigone_Rouge/Fiche technique Trigone Rouge 11.pdf",
+   "en": "Trigone_Rouge/Technical fiche - Trigone Red 11.pdf"
+  },
+  "12": {
+   "fr": "Trigone_Rouge/Fiche technique Trigone Rouge 12.pdf",
+   "en": "Trigone_Rouge/Technical fiche - Trigone Red 12.pdf"
+  },
+  "13": {
+   "fr": "Trigone_Rouge/Fiche technique Trigone Rouge 13.pdf",
+   "en": "Trigone_Rouge/Technical fiche - Trigone Red 13.pdf"
+  },
+  "14": {
+   "fr": "Trigone_Rouge/Fiche technique Trigone Rouge 14.pdf",
+   "en": "Trigone_Rouge/Technical fiche - Trigone Red 14.pdf"
+  },
+  "15": {
+   "fr": "Trigone_Rouge/Fiche technique Trigone Rouge 15.pdf"
+  },
+  "23": {
+   "fr": "documents/actualites/tr-n23-fr.pdf",
+   "en": "documents/actualites/tr-n23-gb.pdf"
+  },
+  "16": {
+   "en": "documents/actualites/trigone-red-16.pdf",
+   "fr": "documents/actualites/trigone-rouge-16.pdf"
+  },
+  "19": {
+   "en": "documents/actualites/trigone-red-number-19.pdf",
+   "fr": "documents/actualites/trigone-rouge-numero-19.pdf"
+  },
+  "20": {
+   "en": "documents/actualites/trigone-red-number-xx.pdf",
+   "fr": "documents/actualites/trigone-rouge-numero-xx.pdf"
+  },
+  "17": {
+   "en": "documents/actualites/trigone-rouge-17-eng.pdf",
+   "fr": "documents/actualites/trigone-rouge-17.pdf"
+  },
+  "21": {
+   "en": "documents/actualites/trxxi---red.pdf",
+   "fr": "documents/actualites/trxxi---rouge.pdf"
+  },
+  "18": {
+   "en": "documents/illustrations/trigone-red-no-18.pdf",
+   "fr": "documents/illustrations/trigone-rouge-no-18.pdf"
+  },
+  "22": {
+   "fr": "documents/actualites/tr-2022-fr.pdf",
+   "en": "documents/actualites/tr-2022-gb.pdf"
+  }
+ },
+ "maceration": {
+  "10": {
+   "fr": "Maceration_Blanc/Fiche technique Maceration Blanc L10.pdf",
+   "en": "Maceration_Blanc/Technical fiche Maceration White L10.pdf"
+  },
+  "13": {
+   "fr": "Maceration_Blanc/Fiche technique Maceration Orange 13.pdf",
+   "en": "Maceration_Blanc/Technical fiche Maceration Orange 13.pdf"
+  },
+  "14": {
+   "fr": "Maceration_Blanc/Fiche technique Maceration Orange 14.pdf",
+   "en": "documents/actualites/technical-sheet-maceration-orange-1.pdf"
+  },
+  "15": {
+   "en": "documents/actualites/maceration-number-15.pdf",
+   "fr": "documents/actualites/maceration-numero-15.pdf"
+  },
+  "16": {
+   "fr": "documents/actualites/maceration-numero-16.pdf",
+   "en": "documents/illustrations/maceration-number-16.pdf"
+  },
+  "21": {
+   "fr": "documents/actualites/mb21-fr.pdf",
+   "en": "documents/actualites/mb21-gb.pdf"
+  },
+  "22": {
+   "fr": "documents/actualites/mb22-fr.pdf",
+   "en": "documents/actualites/mb22-gb.pdf"
+  },
+  "25": {
+   "en": "documents/actualites/mb25-en.pdf",
+   "fr": "documents/actualites/mb25-fr.pdf"
+  },
+  "19": {
+   "en": "documents/illustrations/maceration-number-19.pdf",
+   "fr": "documents/illustrations/maceration-numero-19.pdf"
+  }
+ },
+ "rose": {
+  "2018": {
+   "fr": "documents/actualites/fiche-technique-le-soula-rose-2018.pdf"
+  },
+  "2022": {
+   "fr": "documents/actualites/rose-2022-fr-ambassadeurs-roussillo.pdf",
+   "en": "documents/actualites/rose-2022-gb-ambassadeurs-roussillo.pdf"
+  },
+  "2019": {
+   "en": "documents/actualites/rosee-2019-eng.pdf",
+   "fr": "documents/actualites/rosee-2019.pdf"
+  },
+  "2021": {
+   "fr": "documents/actualites/rosee-2021---fr.pdf",
+   "en": "documents/actualites/rosee-2021-gb.pdf"
+  },
+  "2023": {
+   "fr": "documents/actualites/rosee-2023-fr-ok.pdf",
+   "en": "documents/actualites/rosee-2023-gb.pdf"
+  }
+ }
+}

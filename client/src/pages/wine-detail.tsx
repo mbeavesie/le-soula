@@ -21,7 +21,7 @@ export default function WineDetail() {
       : currentLanguage === 'fr' ? 'Vin introuvable — Le Soula' : 'Wine not found — Le Soula',
     description: wineContent?.note?.slice(0, 200),
     image: wine?.images?.[0],
-    url: wine ? `https://lesoula.com/wine/${wine.slug}` : 'https://lesoula.com/',
+    url: wine ? `https://www.le-soula.com/wine/${wine.slug}` : 'https://www.le-soula.com/',
     type: 'product',
     locale: currentLanguage === 'fr' ? 'fr_FR' : 'en_US',
   });
@@ -257,6 +257,45 @@ export default function WineDetail() {
         </section>
       )}
       
+      {/* All Vintages — technical sheets */}
+      {wine.vintages && wine.vintages.length > 0 && (
+        <section className="py-16">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="font-serif text-4xl font-light text-ink text-center mb-4">
+              {currentLanguage === 'en' ? 'All Vintages' : 'Tous les Millésimes'}
+            </h2>
+            <p className="text-stone-500 text-center mb-12 font-light">
+              {currentLanguage === 'en'
+                ? 'Technical sheets for every vintage produced'
+                : 'Les fiches techniques de tous les millésimes produits'}
+            </p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {wine.vintages.map((v, index) => {
+                const preferred = currentLanguage === 'fr'
+                  ? (v.techSheetFr || v.techSheetEn)
+                  : (v.techSheetEn || v.techSheetFr);
+                if (!preferred) return null;
+                return (
+                  <a
+                    key={index}
+                    href={preferred}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between bg-white rounded-xl px-5 py-4 sophisticated-border hover:border-honey-400 hover:shadow-md transition-all duration-300 group"
+                  >
+                    <span className="font-medium text-ink">{v.label}</span>
+                    <span className="flex items-center gap-2 text-sm text-stone-500 group-hover:text-honey-600 transition-colors">
+                      <Download className="w-4 h-4" />
+                      PDF
+                    </span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Back to Wines */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
