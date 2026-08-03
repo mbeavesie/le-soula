@@ -4,6 +4,7 @@ import {
   winesQuery,
   wineBySlugQuery,
   journalPostsQuery,
+  journalPostBySlugQuery,
   storyParagraphsQuery,
   translationsQuery,
   type SanityWine,
@@ -106,11 +107,25 @@ export function useWine(slug: string | undefined) {
 
 export type UIJournalPost = {
   id: string
+  slug?: string
+  hasBody?: boolean
   img: string
   href: string
   publishedAt: string
   en: { title: string; excerpt: string }
   fr: { title: string; excerpt: string }
+}
+
+export function useJournalPost(slug: string | undefined) {
+  return useQuery<SanityJournalPost | null>({
+    queryKey: ['cms', 'journal', slug],
+    enabled: !!slug && !!sanityClient,
+    queryFn: async () => {
+      if (!sanityClient || !slug) return null
+      return sanityClient.fetch<SanityJournalPost | null>(journalPostBySlugQuery, { slug })
+    },
+    staleTime: 5 * 60 * 1000,
+  })
 }
 
 export function useJournalPosts() {
@@ -132,6 +147,8 @@ export function useJournalPosts() {
         if (!data || data.length === 0) return toFallback()
         return data.map((p) => ({
           id: p._id,
+          slug: p.slug,
+          hasBody: !!p.hasBody,
           img: p.image || '',
           href: p.href || '#',
           publishedAt: p.publishedAt,

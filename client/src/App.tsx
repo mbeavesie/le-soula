@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/hooks/use-language";
 import { lazy, Suspense } from "react";
 import Home from "@/pages/home";
 import WineDetail from "@/pages/wine-detail";
+import JournalDetail from "@/pages/journal-detail";
 import NotFound from "@/pages/not-found";
 
 const StudioPage = lazy(() => import("@/pages/studio"));
@@ -28,6 +29,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/wine/:slug" component={WineDetail} />
+      <Route path="/journal/:slug" component={JournalDetail} />
       <Route component={NotFound} />
     </Switch>
   );

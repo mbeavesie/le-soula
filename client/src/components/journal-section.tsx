@@ -1,6 +1,7 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { useJournalPosts, type UIJournalPost } from "@/hooks/use-cms";
+import { Link } from "wouter";
 
 function JournalCard({ post }: { post: UIJournalPost }) {
   const { currentLanguage } = useLanguage();
@@ -12,12 +13,14 @@ function JournalCard({ post }: { post: UIJournalPost }) {
     { year: 'numeric', month: 'long', day: 'numeric' }
   );
 
-  const external = post.href && post.href !== '#';
+  const external = !post.hasBody && post.href && post.href !== '#';
+  const internal = post.hasBody && post.slug;
+  const CardTag: any = internal ? Link : 'a';
 
   return (
     <article ref={ref} className="reveal group">
-      <a
-        href={post.href || '#'}
+      <CardTag
+        {...(internal ? { href: `/journal/${post.slug}` } : { href: post.href || '#' })}
         {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         className="block rounded-3xl sophisticated-border overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-white to-stone-50/50"
       >
@@ -41,7 +44,7 @@ function JournalCard({ post }: { post: UIJournalPost }) {
             {content.excerpt}
           </p>
         </div>
-      </a>
+      </CardTag>
     </article>
   );
 }

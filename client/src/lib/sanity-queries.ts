@@ -29,7 +29,16 @@ export const wineBySlugQuery = `*[_type == "wine" && slug.current == $slug][0] {
 export const journalPostsQuery = `*[_type == "journalPost"] | order(publishedAt desc) {
   _id, title, excerpt, href, publishedAt,
   "image": image.asset->url,
-  "slug": slug.current
+  "slug": slug.current,
+  "hasBody": count(bodyEn) > 0 || count(bodyFr) > 0
+}`
+
+export const journalPostBySlugQuery = `*[_type == "journalPost" && slug.current == $slug][0] {
+  _id, title, excerpt, href, publishedAt,
+  "image": image.asset->url,
+  "slug": slug.current,
+  "bodyEn": bodyEn[]{..., _type == "image" => {"url": asset->url}},
+  "bodyFr": bodyFr[]{..., _type == "image" => {"url": asset->url}}
 }`
 
 export const storyParagraphsQuery = `*[_type == "storyParagraph"] | order(order asc) {
@@ -71,6 +80,9 @@ export type SanityJournalPost = {
   href?: string
   publishedAt: string
   image?: string
+  hasBody?: boolean
+  bodyEn?: any[]
+  bodyFr?: any[]
 }
 export type SanityStoryParagraph = {
   _id: string
