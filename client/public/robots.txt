@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lesoula.com/sitemap.xml
+Sitemap: https://www.le-soula.com/sitemap.xml
