@@ -27,12 +27,9 @@ export const wines = [
         nose: 'White flowers, citrus zest, and mineral stones with hints of Mediterranean herbs',
         palate: 'Crisp and elegant with saline minerality, fresh acidity, and a long, pure finish'
       },
-      awards: [
-        { title: 'Wine Spectator', score: '92 points', year: '2023' },
-        { title: 'Decanter', score: '94 points', year: '2023' }
-      ],
-      quote: 'A wine of remarkable precision and altitude-driven character',
-      quotesource: 'Jancis Robinson MW'
+      awards: [],
+      quote: '',
+      quotesource: ''
     },
     fr: {
       name: 'Le Soula Blanc',
@@ -43,12 +40,9 @@ export const wines = [
         nose: 'Fleurs blanches, zestes d\'agrumes et pierres minérales avec des notes d\'herbes méditerranéennes',
         palate: 'Net et élégant avec une minéralité saline, une acidité fraîche et une finale longue et pure'
       },
-      awards: [
-        { title: 'Wine Spectator', score: '92 points', year: '2023' },
-        { title: 'Decanter', score: '94 points', year: '2023' }
-      ],
-      quote: 'Un vin d\'une précision remarquable et d\'un caractère marqué par l\'altitude',
-      quotesource: 'Jancis Robinson MW'
+      awards: [],
+      quote: '',
+      quotesource: ''
     }
   },
   {
@@ -65,12 +59,9 @@ export const wines = [
         nose: 'Black pepper, wild herbs, red berries, and underlying schist minerality',
         palate: 'Structured yet elegant, with fine-grained tannins and a spicy, persistent finish'
       },
-      awards: [
-        { title: 'Robert Parker', score: '95 points', year: '2022' },
-        { title: 'Revue du Vin de France', score: '17/20', year: '2022' }
-      ],
-      quote: 'A masterful expression of high-altitude terroir and organic viticulture',
-      quotesource: 'Michel Bettane'
+      awards: [],
+      quote: '',
+      quotesource: ''
     },
     fr: {
       name: 'Le Soula Rouge',
@@ -81,12 +72,9 @@ export const wines = [
         nose: 'Poivre noir, herbes sauvages, fruits rouges et minéralité schisteuse sous-jacente',
         palate: 'Structuré mais élégant, avec des tanins fins et une finale épicée et persistante'
       },
-      awards: [
-        { title: 'Robert Parker', score: '95 points', year: '2022' },
-        { title: 'Revue du Vin de France', score: '17/20', year: '2022' }
-      ],
-      quote: 'Une expression magistrale du terroir d\'altitude et de la viticulture biologique',
-      quotesource: 'Michel Bettane'
+      awards: [],
+      quote: '',
+      quotesource: ''
     }
   },
   {
@@ -103,12 +91,9 @@ export const wines = [
         nose: 'Dried apricots, orange peel, mountain herbs, and complex phenolic depth',
         palate: 'Rich texture with tannic structure, wild fermentation character, and extraordinary length'
       },
-      awards: [
-        { title: 'Natural Wine Company', score: 'Outstanding', year: '2023' },
-        { title: 'The World of Fine Wine', score: 'Exceptional', year: '2023' }
-      ],
-      quote: 'A profound meditation on natural winemaking and terroir expression',
-      quotesource: 'Alice Feiring'
+      awards: [],
+      quote: '',
+      quotesource: ''
     },
     fr: {
       name: 'La Macération du Soula',
@@ -119,12 +104,9 @@ export const wines = [
         nose: 'Abricots secs, zeste d\'orange, herbes de montagne et profondeur phénolique complexe',
         palate: 'Texture riche avec structure tannique, caractère de fermentation sauvage et longueur extraordinaire'
       },
-      awards: [
-        { title: 'Natural Wine Company', score: 'Exceptionnel', year: '2023' },
-        { title: 'The World of Fine Wine', score: 'Remarquable', year: '2023' }
-      ],
-      quote: 'Une méditation profonde sur la vinification naturelle et l\'expression du terroir',
-      quotesource: 'Alice Feiring'
+      awards: [],
+      quote: '',
+      quotesource: ''
     }
   },
   {
@@ -135,34 +117,28 @@ export const wines = [
     en: {
       name: 'Trigone',
       vintage: 'Non-Vintage',
-      note: 'Solera-style perpetual blend. Multiple vintages, textural depth. Savoury complexity, remarkable persistence.',
+      note: 'A perpetual blend across multiple vintages, textural depth. Savoury complexity, remarkable persistence.',
       tastingNotes: {
         sight: 'Deep golden color with brilliant clarity, reflecting years of patient development',
-        nose: 'Honeyed complexity, dried fruits, nuts, and subtle oxidative notes from solera aging',
+        nose: 'Honeyed complexity, dried fruits, nuts, and subtle oxidative notes from the perpetual blend',
         palate: 'Extraordinary depth and concentration, with layers of flavor unfolding endlessly'
       },
-      awards: [
-        { title: 'Wine & Spirits', score: '96 points', year: '2024' },
-        { title: 'La Revue du Vin de France', score: '18/20', year: '2024' }
-      ],
-      quote: 'A wine of unprecedented complexity and emotional resonance',
-      quotesource: 'Rajat Parr'
+      awards: [],
+      quote: '',
+      quotesource: ''
     },
     fr: {
       name: 'Trigone',
       vintage: 'Sans Millésime',
-      note: 'Assemblage perpétuel en solera. Plusieurs millésimes, profondeur texturale. Complexité savoureuse, persistance remarquable.',
+      note: 'Assemblage perpétuel de plusieurs millésimes, profondeur texturale. Complexité savoureuse, persistance remarquable.',
       tastingNotes: {
         sight: 'Couleur dorée profonde d\'une clarté brillante, reflet d\'années de développement patient',
-        nose: 'Complexité miellée, fruits secs, noix et notes oxydatives subtiles du vieillissement en solera',
+        nose: 'Complexité miellée, fruits secs, noix et notes oxydatives subtiles de l\'assemblage perpétuel',
         palate: 'Profondeur et concentration extraordinaires, avec des couches de saveurs se déployant à l\'infini'
       },
-      awards: [
-        { title: 'Wine & Spirits', score: '96 points', year: '2024' },
-        { title: 'La Revue du Vin de France', score: '18/20', year: '2024' }
-      ],
-      quote: 'Un vin d\'une complexité et d\'une résonance émotionnelle sans précédent',
-      quotesource: 'Rajat Parr'
+      awards: [],
+      quote: '',
+      quotesource: ''
     }
   },
   {
@@ -179,12 +155,9 @@ export const wines = [
         nose: 'Fresh red berries, wild herbs, and mineral precision from granite and gneiss soils',
         palate: 'Crisp and elegant with saline minerality, vibrant acidity, and a long, refined finish'
       },
-      awards: [
-        { title: 'Organic Certification', score: 'Certified Bio', year: '2022' },
-        { title: 'Biodynamic Recognition', score: 'Outstanding', year: '2022' }
-      ],
-      quote: 'A rare expression of high-altitude rosé with exceptional purity and precision',
-      quotesource: 'Le Soula Estate'
+      awards: [],
+      quote: '',
+      quotesource: ''
     },
     fr: {
       name: 'Le Rosé du Soula',
@@ -195,12 +168,9 @@ export const wines = [
         nose: 'Fruits rouges frais, herbes sauvages et précision minérale des sols granitiques et gneissiques',
         palate: 'Net et élégant avec une minéralité saline, une acidité vive et une finale longue et raffinée'
       },
-      awards: [
-        { title: 'Certification Biologique', score: 'Certifié Bio', year: '2022' },
-        { title: 'Reconnaissance Biodynamique', score: 'Exceptionnel', year: '2022' }
-      ],
-      quote: 'Une expression rare de rosé d\'altitude avec une pureté et une précision exceptionnelles',
-      quotesource: 'Domaine Le Soula'
+      awards: [],
+      quote: '',
+      quotesource: ''
     }
   }
 ];

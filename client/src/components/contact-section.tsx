@@ -29,12 +29,14 @@ export default function ContactSection() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('/api/contact', {
+      // Netlify Forms: posts land in the Netlify dashboard (with optional
+      // email notifications to the estate) — no server needed.
+      const response = await fetch('/', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify({ email }),
+        body: new URLSearchParams({ 'form-name': 'newsletter', email }).toString(),
       });
 
       if (response.ok) {

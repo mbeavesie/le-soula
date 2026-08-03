@@ -1,0 +1,110 @@
+[build]
+  command = "vite build"
+  publish = "dist/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# ---- Legacy URLs from the old PHP site (Toile Design) ----
+# Pages
+[[redirects]]
+  from = "/index.php"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/le-soula-vins.php"
+  to = "/#wines"
+  status = 301
+
+[[redirects]]
+  from = "/le-soula-wines.php"
+  to = "/#wines"
+  status = 301
+
+[[redirects]]
+  from = "/le-soula-telechargement.php"
+  to = "/#wines"
+  status = 301
+
+[[redirects]]
+  from = "/le-soula-localisation.php"
+  to = "/#buy"
+  status = 301
+
+[[redirects]]
+  from = "/soula-equipe.php"
+  to = "/#story"
+  status = 301
+
+[[redirects]]
+  from = "/soula-team.php"
+  to = "/#story"
+  status = 301
+
+[[redirects]]
+  from = "/soula-histoire.php"
+  to = "/#story"
+  status = 301
+
+[[redirects]]
+  from = "/soula-history.php"
+  to = "/#story"
+  status = 301
+
+[[redirects]]
+  from = "/fenouilledes-terroir.php"
+  to = "/#terroir"
+  status = 301
+
+[[redirects]]
+  from = "/fenouilledes-vignoble.php"
+  to = "/#terroir"
+  status = 301
+
+[[redirects]]
+  from = "/le-soula-chai.php"
+  to = "/#terroir"
+  status = 301
+
+[[redirects]]
+  from = "/le-soula-presse.php"
+  to = "/#journal"
+  status = 301
+
+[[redirects]]
+  from = "/galerie-photo.php"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/soula-contact-fr.php"
+  to = "/#contact"
+  status = 301
+
+[[redirects]]
+  from = "/soula-contact-en.php"
+  to = "/#contact"
+  status = 301
+
+[[redirects]]
+  from = "/mentions.php"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/confidentialite-rgpd.php"
+  to = "/"
+  status = 301
+
+# Catch-all for any other legacy .php URL
+[[redirects]]
+  from = "/*.php"
+  to = "/"
+  status = 301
+
+# ---- SPA fallback (must stay last) ----
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
