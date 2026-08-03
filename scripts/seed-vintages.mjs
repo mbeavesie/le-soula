@@ -19,8 +19,12 @@ import path from 'path'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
+console.log('[seed] env check: RUN_SEED=%s TOKEN=%s PROJECT=%s',
+  process.env.RUN_SEED ?? 'unset',
+  process.env.SANITY_TOKEN ? 'present' : 'missing',
+  process.env.VITE_SANITY_PROJECT_ID ?? 'unset')
 if (process.env.RUN_SEED !== '1' || !process.env.SANITY_TOKEN) {
-  console.log('[seed] RUN_SEED not set — skipping content seed.')
+  console.log('[seed] trigger or token missing — skipping content seed.')
   process.exit(0)
 }
 

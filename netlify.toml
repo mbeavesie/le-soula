@@ -4,9 +4,6 @@
 
 [build.environment]
   NODE_VERSION = "20"
-  VITE_SANITY_PROJECT_ID = "9cvkgqfs"
-  VITE_SANITY_DATASET = "production"
-  RUN_SEED = "1"
 
 # ---- Legacy URLs from the old PHP site (Toile Design) ----
 # Pages
