@@ -1,10 +1,12 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import { useState } from "react";
 import vineyardImage from "@assets/Le Soula-100_1754824026402.jpg";
 
 export default function TerroirSection() {
   const { t } = useLanguage();
   const { ref } = useScrollReveal<HTMLDivElement>();
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <section id="terroir" className="py-32 border-t border-stone-200/50">
@@ -35,15 +37,25 @@ export default function TerroirSection() {
               <span className="leading-relaxed">{t('terroir.climate')}</span>
             </div>
           </div>
-          <a
-            href="#"
+          <div
+            className={`overflow-hidden transition-all duration-700 ease-in-out ${expanded ? 'max-h-[1200px] opacity-100 mt-8' : 'max-h-0 opacity-0'}`}
+          >
+            <div className="space-y-5 text-stone-600 font-light leading-relaxed border-l-2 border-honey-300/60 pl-6">
+              <p>{t('terroir.more1')}</p>
+              <p>{t('terroir.more2')}</p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => setExpanded((v) => !v)}
+            aria-expanded={expanded}
             className="mt-8 inline-flex items-center gap-3 text-sm font-medium text-honey-600 hover:text-honey-700 transition-all duration-300 group/link"
           >
-            <span className="tracking-wide">More</span>
-            <svg className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span className="tracking-wide">{expanded ? t('terroir.lessLabel') : t('terroir.moreLabel')}</span>
+            <svg className={`w-4 h-4 transition-transform duration-300 ${expanded ? 'rotate-90' : 'group-hover/link:translate-x-1'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </button>
           </div>
         
         <div className="order-1 lg:order-2">

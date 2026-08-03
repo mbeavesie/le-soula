@@ -40,11 +40,15 @@ export const translations = {
     },
     terroir: {
       title: 'Terroir',
-      elev: 'Elevation: 400–700 m',
+      elev: 'Elevation: 350–650 m',
       soils: 'Soils: granite, schist',
-      farming: 'Farming: organic (certified), hand harvested',
-      climate: 'Climate: mountain influence; Tramontane wind',
-      cta: 'Read more about our terroir →'
+      farming: 'Farming: certified organic from the outset, biodynamic (Demeter certified) since 2008, hand harvested',
+      climate: 'Climate: Mediterranean meeting mountain; Tramontane wind',
+      cta: 'Read more about our terroir →',
+      moreLabel: 'More',
+      lessLabel: 'Less',
+      more1: 'The Fenouillèdes is an old borderland — the ancient "march of Spain" between Catalonia and Occitania, Roman Narbonnaise, Visigoth Septimanie. Its name comes from the Latin Pagus Fenolietensis: hay country. Vines have grown here for centuries, but always confined to the warmest, steepest south-facing slopes — the adret, known in Occitan as the soula, or soulane. It is from one of these sun-drenched slopes, Lo Soula, that the estate takes its name.',
+      more2: 'Our 22 hectares rise from 350 to 650 metres across the villages of Saint Martin de Fenouillet, Feilluns, Saint Arnac and Le Vivier. The climate is Mediterranean towards the plain and mountainous towards the Pyrenees; altitude slows ripening, trading power for freshness. From granite and schist come wines that have been recognised, since the first vintage in 2001, as pure, full of vitality and character.'
     },
     journal: {
       title: 'Journal',
@@ -130,11 +134,15 @@ export const translations = {
     },
     terroir: {
       title: 'Terroir',
-      elev: 'Altitude : 400–700 m',
+      elev: 'Altitude : 350–650 m',
       soils: 'Sols : granit, schiste',
-      farming: 'Viticulture : biologique (certifiée), vendanges manuelles',
-      climate: 'Climat : influence montagnarde ; vent de Tramontane',
-      cta: 'En savoir plus sur notre terroir →'
+      farming: 'Viticulture : biologique certifiée dès l\'origine, biodynamique (certifiée Demeter) depuis 2008, vendanges manuelles',
+      climate: 'Climat : méditerranéen et montagnard ; vent de Tramontane',
+      cta: 'En savoir plus sur notre terroir →',
+      moreLabel: 'En savoir plus',
+      lessLabel: 'Réduire',
+      more1: 'Le Fenouillèdes, ancienne marche d\'Espagne, est situé entre la Catalogne et l\'Occitanie — Narbonnaise sous les Romains, Septimanie sous les Wisigoths. Son nom viendrait du latin Pagus Fenolietensis, le pays des foins. La vigne y est cultivée depuis des siècles, cantonnée aux terroirs les plus chauds et les plus pentus, exposés plein sud — l\'adret, appelé en occitan le soula, ou soulane. C\'est de l\'un de ces coteaux ensoleillés, Lo Soula, que le domaine tient son nom.',
+      more2: 'Nos 22 hectares s\'étendent de 350 à 650 mètres d\'altitude sur les communes de Saint Martin de Fenouillet, Feilluns, Saint Arnac et Le Vivier. Le climat y est méditerranéen en se rapprochant de la plaine et montagnard en se rapprochant des Pyrénées ; l\'altitude ralentit la maturation et préserve la fraîcheur. Du granit et du schiste naissent des vins reconnus, depuis le premier millésime en 2001, comme purs, pleins de vitalité et de caractère.'
     },
     journal: {
       title: 'Journal',

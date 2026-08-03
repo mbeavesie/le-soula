@@ -1,5 +1,5 @@
 [build]
-  command = "node scripts/seed-vintages.mjs && vite build"
+  command = "node scripts/seed-vintages.mjs && node scripts/fix-translations.mjs && vite build"
   publish = "dist/public"
 
 [build.environment]
