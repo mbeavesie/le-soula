@@ -24,7 +24,7 @@ export default function MapSection() {
           }}
         >
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.410446591461!2d2.4347041762474366!3d42.82038430589542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12afe06f20ffc5e3%3A0xfbabbab703139d7e!2sLe%20Soula!5e1!3m2!1sen!2sfr!4v1754823011984!5m2!1sen!2sfr" 
+            src="https://maps.google.com/maps?q=Pla%20d'en%20Dallen%2C%2066220%20Saint-Martin-de-Fenouillet%2C%20France&z=12&output=embed" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }}
@@ -34,6 +34,18 @@ export default function MapSection() {
             title="Le Soula Location"
           />
           <div className="absolute inset-0 border border-stone-300/20 rounded-3xl pointer-events-none"></div>
+        </div>
+      </div>
+
+      <div className="mt-10 grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto text-center sm:text-left">
+        <div className="p-6 rounded-2xl bg-gradient-to-r from-honey-50/50 to-transparent border border-honey-200/30">
+          <p className="text-xs text-honey-600 font-medium tracking-widest uppercase mb-2">{t('location.officeLabel')}</p>
+          <p className="text-stone-700 font-light leading-relaxed">{t('location.officeAddress')}</p>
+          <p className="text-stone-500 font-light mt-1">{t('location.officePhone')}</p>
+        </div>
+        <div className="p-6 rounded-2xl bg-gradient-to-r from-honey-50/50 to-transparent border border-honey-200/30">
+          <p className="text-xs text-honey-600 font-medium tracking-widest uppercase mb-2">{t('location.cellarLabel')}</p>
+          <p className="text-stone-700 font-light leading-relaxed">{t('location.cellarAddress')}</p>
         </div>
       </div>
     </section>

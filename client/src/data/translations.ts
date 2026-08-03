@@ -74,7 +74,12 @@ export const translations = {
     },
     location: {
       title: 'Find Us',
-      copy: 'Located in the heart of the Fenouillèdes, our vineyards sit at high altitude on ancient granite and schist soils.'
+      copy: 'Located in the heart of the Fenouillèdes, our vineyards sit at high altitude on ancient granite and schist soils.',
+      officeLabel: 'Office & vineyards',
+      officeAddress: "Pla d'en Dallen, 66220 Saint-Martin-de-Fenouillet, France",
+      officePhone: '+33 4 68 35 69 31',
+      cellarLabel: 'Cellar',
+      cellarAddress: 'Avenue des Fenouillèdes, 66220 Prugnanes, France'
     },
     contact: {
       title: 'Stay Connected',
@@ -168,7 +173,12 @@ export const translations = {
     },
     location: {
       title: 'Nous Trouver',
-      copy: 'Situés au cœur des Fenouillèdes, nos vignobles s\'élèvent en altitude sur d\'anciens sols de schiste et de granit.'
+      copy: 'Situés au cœur des Fenouillèdes, nos vignobles s\'élèvent en altitude sur d\'anciens sols de granit et de schiste.',
+      officeLabel: 'Bureau & vignobles',
+      officeAddress: "Pla d'en Dallen, 66220 Saint-Martin-de-Fenouillet, France",
+      officePhone: '+33 4 68 35 69 31',
+      cellarLabel: 'Cave',
+      cellarAddress: 'Avenue des Fenouillèdes, 66220 Prugnanes, France'
     },
     contact: {
       title: 'Restez Connecté',
