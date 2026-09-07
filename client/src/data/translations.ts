@@ -34,21 +34,21 @@ export const translations = {
       expandButton: 'Read Full Story',
       collapseButton: 'Show Less',
       p1: 'At Le Soula, the humble bee is more than a visitor to our vines—it\'s our muse. Tireless, collaborative, and deeply attuned to its environment, the bee embodies everything we believe in: working with nature, respecting its rhythms, and creating something greater than the sum of its parts. In the high foothills of the Eastern Pyrenees, our vineyards hum with this same quiet industry.',
-      p2: 'Le Soula was born in 2001 when visionary winemaker Gérard Gauby, alongside English importers Roy Richards and Mark Walford, recognized the potent potential of the Fenouillèdes terroir—granite-rich, pesticide-free soils kissed by cool mountain air and Southern sun. With 22 hectares initially, spanning altitudes from 350 to 650 meters across Saint Martin de Fenouillet, Feilluns, Saint Arnac, and Le Vivier, we embraced organic viticulture from the outset, moving to biodynamic from 2008 onwards, guided by lunar cycles and natural composts.',
+      p2: 'Le Soula was born in 2001 when visionary winemaker Gérard Gauby, alongside English importers Roy Richards and Mark Walford, recognized the potent potential of the Fenouillèdes terroir—granite-rich, pesticide-free soils kissed by cool mountain air and Southern sun. With 50 hectares of wild mountainside spanning altitudes from 350 to 650 meters across Saint Martin de Fenouillet, Feilluns and Le Vivier — 17 of them currently working vineyards — we embraced organic viticulture from the outset, moving to biodynamics from 2008, guided by lunar cycles and natural composts.',
       p3: 'By 2008, a restored co-op cellar in Prugnanes became our winemaking home—perfect for nurturing the elegance and restraint at the heart of Le Soula. That same year, Gérald Standley brought his Bordeaux finesse to the team, steering us toward even greater refinement and character.',
       p4: 'Today Le Soula is in the hands of Mark Walford and Wendy Wilson, with Wendy running the estate and winemaking. It is a living, breathing ecosystem—where bees pollinate, soils thrive, and wines are crafted with patience. Each bottle is a distillation of place, time, and harmony. Like the bee, we move with purpose, knowing that great things take care, connection, and just the right conditions to flourish.'
     },
     terroir: {
       title: 'Terroir',
       elev: 'Elevation: 350–650 m',
-      soils: 'Soils: granite, schist',
-      farming: 'Farming: certified organic from the outset, biodynamic (Demeter certified) since 2008, hand harvested',
-      climate: 'Climate: Mediterranean meeting mountain; Tramontane wind',
+      soils: 'Soils: granite, schist, gneiss',
+      farming: 'Farming: organic from the outset, biodynamic since 2008, certified since 2011; hand harvested',
+      climate: 'Climate: Tramontane and Marin winds',
       cta: 'Read more about our terroir →',
       moreLabel: 'More',
       lessLabel: 'Less',
       more1: 'The Fenouillèdes is an old borderland — the ancient "march of Spain" between Catalonia and Occitania, Roman Narbonnaise, Visigoth Septimanie. Its name comes from the Latin Pagus Fenolietensis: hay country. Vines have grown here for centuries, but always confined to the warmest, steepest south-facing slopes — the adret, known in Occitan as the soula, or soulane. It is from one of these sun-drenched slopes, Lo Soula, that the estate takes its name.',
-      more2: 'Our 22 hectares rise from 350 to 650 metres across the villages of Saint Martin de Fenouillet, Feilluns, Saint Arnac and Le Vivier. The climate is Mediterranean towards the plain and mountainous towards the Pyrenees; altitude slows ripening, trading power for freshness. From granite and schist come wines that have been recognised, since the first vintage in 2001, as pure, full of vitality and character.'
+      more2: 'Le Soula is 50 hectares of wild mountainside, of which 17 are currently working vineyards, rising from 350 to 650 metres across the villages of Saint Martin de Fenouillet, Feilluns and Le Vivier. The climate is Mediterranean towards the plain and mountainous towards the Pyrenees; altitude slows ripening, trading power for freshness. From granite, schist and gneiss come wines that have been recognised, since the first vintage in 2001, as pure, full of vitality and character, with an outstanding ability to age.'
     },
     journal: {
       title: 'Journal',
@@ -133,21 +133,21 @@ export const translations = {
       expandButton: 'Lire l\'Histoire Complète',
       collapseButton: 'Réduire',
       p1: 'Au Soula, l\'humble abeille n\'est pas qu\'une visiteuse de nos vignes—c\'est notre muse. Infatigable, collaborative et profondément à l\'écoute de son environnement, l\'abeille incarne tout ce en quoi nous croyons : travailler avec la nature, respecter ses rythmes et créer quelque chose de plus grand que la somme de ses parties. Dans les contreforts orientaux des Pyrénées, nos vignobles bourdonnent de cette même industrie silencieuse.',
-      p2: 'Le Soula est né en 2001 quand le vigneron visionnaire Gérard Gauby, aux côtés des importateurs anglais Roy Richards et Mark Walford, a reconnu le potentiel puissant du terroir des Fenouillèdes—sols riches en granit, sans pesticides, caressés par l\'air frais des montagnes et le soleil du Sud. Avec 22 hectares au départ, s\'étendant de 350 à 650 mètres d\'altitude sur Saint Martin de Fenouillet, Feilluns, Saint Arnac et Le Vivier, nous avons pratiqué la viticulture biologique dès le début, passant à la biodynamie à partir de 2008, guidés par les cycles lunaires et les composts naturels.',
+      p2: 'Le Soula est né en 2001 quand le vigneron visionnaire Gérard Gauby, aux côtés des importateurs anglais Roy Richards et Mark Walford, a reconnu le potentiel puissant du terroir des Fenouillèdes—sols riches en granit, sans pesticides, caressés par l\'air frais des montagnes et le soleil du Sud. Avec 50 hectares de montagne sauvage s\'étendant de 350 à 650 mètres d\'altitude sur Saint Martin de Fenouillet, Feilluns et Le Vivier — dont 17 actuellement en vignes — nous avons pratiqué la viticulture biologique dès le début, passant à la biodynamie à partir de 2008, guidés par les cycles lunaires et les composts naturels.',
       p3: 'En 2008, une cave coopérative restaurée à Prugnanes devient notre foyer viticole—parfaite pour cultiver l\'élégance et la retenue au cœur du Soula. La même année, Gérald Standley apporte sa finesse bordelaise à l\'équipe, nous orientant vers encore plus de raffinement et de caractère.',
       p4: 'Aujourd\'hui, Le Soula est entre les mains de Mark Walford et Wendy Wilson, avec Wendy dirigeant le domaine et la vinification. C\'est un écosystème vivant et respirant—où les abeilles pollinisent, les sols prospèrent et les vins sont élaborés avec patience. Chaque bouteille est une distillation de lieu, de temps et d\'harmonie. Comme l\'abeille, nous agissons avec intention, sachant que les grandes choses demandent du soin, de la connexion et les bonnes conditions pour s\'épanouir.'
     },
     terroir: {
       title: 'Terroir',
       elev: 'Altitude : 350–650 m',
-      soils: 'Sols : granit, schiste',
-      farming: 'Viticulture : biologique certifiée dès l\'origine, biodynamique (certifiée Demeter) depuis 2008, vendanges manuelles',
-      climate: 'Climat : méditerranéen et montagnard ; vent de Tramontane',
+      soils: 'Sols : granit, schiste, gneiss',
+      farming: 'Viticulture : biologique dès l\'origine, biodynamique depuis 2008, certifiée depuis 2011 ; vendanges manuelles',
+      climate: 'Climat : vents de Tramontane et du Marin',
       cta: 'En savoir plus sur notre terroir →',
       moreLabel: 'En savoir plus',
       lessLabel: 'Réduire',
       more1: 'Le Fenouillèdes, ancienne marche d\'Espagne, est situé entre la Catalogne et l\'Occitanie — Narbonnaise sous les Romains, Septimanie sous les Wisigoths. Son nom viendrait du latin Pagus Fenolietensis, le pays des foins. La vigne y est cultivée depuis des siècles, cantonnée aux terroirs les plus chauds et les plus pentus, exposés plein sud — l\'adret, appelé en occitan le soula, ou soulane. C\'est de l\'un de ces coteaux ensoleillés, Lo Soula, que le domaine tient son nom.',
-      more2: 'Nos 22 hectares s\'étendent de 350 à 650 mètres d\'altitude sur les communes de Saint Martin de Fenouillet, Feilluns, Saint Arnac et Le Vivier. Le climat y est méditerranéen en se rapprochant de la plaine et montagnard en se rapprochant des Pyrénées ; l\'altitude ralentit la maturation et préserve la fraîcheur. Du granit et du schiste naissent des vins reconnus, depuis le premier millésime en 2001, comme purs, pleins de vitalité et de caractère.'
+      more2: 'Le Soula, ce sont 50 hectares de montagne sauvage, dont 17 actuellement en vignes, s\'étendant de 350 à 650 mètres d\'altitude sur les communes de Saint Martin de Fenouillet, Feilluns et Le Vivier. Le climat y est méditerranéen en se rapprochant de la plaine et montagnard en se rapprochant des Pyrénées ; l\'altitude ralentit la maturation et préserve la fraîcheur. Du granit, du schiste et du gneiss naissent des vins reconnus, depuis le premier millésime en 2001, comme purs, pleins de vitalité et de caractère, avec une remarquable aptitude au vieillissement.'
     },
     journal: {
       title: 'Journal',
