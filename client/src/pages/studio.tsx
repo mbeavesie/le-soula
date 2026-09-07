@@ -9,7 +9,11 @@ const StudioRoot = lazy(async () => {
   const config = (configMod as any).default
   return {
     default: function StudioPage() {
-      return <Studio config={config} />
+      return (
+        <div style={{ height: '100vh', width: '100vw', overflow: 'hidden' }}>
+          <Studio config={config} />
+        </div>
+      )
     },
   }
 })
