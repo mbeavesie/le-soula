@@ -295,17 +295,27 @@ export default function WineDetail() {
         </section>
       )}
       
-      {/* All Vintages — technical sheets */}
-      {wine.vintages && wine.vintages.length > 0 && (
+      {/* All Vintages / Releases — technical sheets */}
+      {wine.vintages && wine.vintages.length > 0 && (() => {
+        const isNonVintage = /non[- ]?vintage|sans mill/i.test(
+          `${wine.en?.vintage || ''} ${wine.fr?.vintage || ''}`
+        );
+        return (
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="font-serif text-4xl font-light text-ink text-center mb-4">
-              {currentLanguage === 'en' ? 'All Vintages' : 'Tous les Millésimes'}
+              {currentLanguage === 'en'
+                ? (isNonVintage ? 'All Releases' : 'All Vintages')
+                : (isNonVintage ? 'Toutes les Éditions' : 'Tous les Millésimes')}
             </h2>
             <p className="text-stone-500 text-center mb-12 font-light">
               {currentLanguage === 'en'
-                ? 'Technical sheets for every vintage produced'
-                : 'Les fiches techniques de tous les millésimes produits'}
+                ? (isNonVintage
+                    ? 'Technical sheets for every release'
+                    : 'Technical sheets for every vintage produced')
+                : (isNonVintage
+                    ? 'Les fiches techniques de toutes les éditions'
+                    : 'Les fiches techniques de tous les millésimes produits')}
             </p>
             <div className="grid sm:grid-cols-2 gap-3">
               {wine.vintages.map((v, index) => {
@@ -332,7 +342,8 @@ export default function WineDetail() {
             </div>
           </div>
         </section>
-      )}
+        );
+      })()}
 
       {/* Back to Wines */}
       <section className="py-16">
