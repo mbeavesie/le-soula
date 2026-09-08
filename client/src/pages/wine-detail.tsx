@@ -6,6 +6,55 @@ import { useWine } from "@/hooks/use-cms";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Download, ArrowLeft } from "lucide-react";
 
+function TastingNotesGrid({ notes, lang }: { notes: { sight?: string; nose?: string; palate?: string }; lang: string }) {
+  return (
+    <div className="grid md:grid-cols-3 gap-8">
+      {/* Sight */}
+      <div className="text-center">
+        <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-honey-100 to-honey-200 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-honey-600 rounded-full"></div>
+        </div>
+        <h3 className="font-serif text-xl font-medium text-ink mb-3">
+          {lang === 'en' ? 'Sight' : 'Vue'}
+        </h3>
+        <p className="text-stone-600 leading-relaxed font-light">
+          {notes.sight}
+        </p>
+      </div>
+
+      {/* Nose */}
+      <div className="text-center">
+        <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-honey-100 to-honey-200 rounded-full flex items-center justify-center">
+          <svg className="w-8 h-8 text-honey-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+        </div>
+        <h3 className="font-serif text-xl font-medium text-ink mb-3">
+          {lang === 'en' ? 'Nose' : 'Nez'}
+        </h3>
+        <p className="text-stone-600 leading-relaxed font-light">
+          {notes.nose}
+        </p>
+      </div>
+
+      {/* Palate */}
+      <div className="text-center">
+        <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-honey-100 to-honey-200 rounded-full flex items-center justify-center">
+          <svg className="w-8 h-8 text-honey-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.5a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-1.5 1.5H9m0-5a1.5 1.5 0 011.5-1.5H12a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-1.5 1.5H10.5M9 10V9a1.5 1.5 0 011.5-1.5h1M13 16V6" />
+          </svg>
+        </div>
+        <h3 className="font-serif text-xl font-medium text-ink mb-3">
+          {lang === 'en' ? 'Palate' : 'Bouche'}
+        </h3>
+        <p className="text-stone-600 leading-relaxed font-light">
+          {notes.palate}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function WineDetail() {
   const { slug } = useParams<{ slug: string }>();
   const { currentLanguage, t } = useLanguage();
@@ -76,13 +125,32 @@ export default function WineDetail() {
             <ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
             <span className="font-medium">Le Soula</span>
           </Link>
-          <button
-            onClick={() => window.open(wine.tech, '_blank')}
-            className="flex items-center gap-2 px-4 py-2 bg-honey-600 text-white rounded-full hover:bg-honey-700 transition-all duration-300 text-sm font-medium"
-          >
-            <Download className="w-4 h-4" />
-            {currentLanguage === 'en' ? 'Technical Sheet' : 'Fiche Technique'}
-          </button>
+          {wine.techRouge ? (
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => window.open(wine.tech, '_blank')}
+                className="flex items-center gap-2 px-4 py-2 bg-honey-600 text-white rounded-full hover:bg-honey-700 transition-all duration-300 text-sm font-medium"
+              >
+                <Download className="w-4 h-4" />
+                {currentLanguage === 'en' ? 'Blanc — Tech Sheet' : 'Fiche — Blanc'}
+              </button>
+              <button
+                onClick={() => window.open(wine.techRouge, '_blank')}
+                className="flex items-center gap-2 px-4 py-2 bg-ink text-paper rounded-full hover:bg-ink/90 transition-all duration-300 text-sm font-medium"
+              >
+                <Download className="w-4 h-4" />
+                {currentLanguage === 'en' ? 'Rouge — Tech Sheet' : 'Fiche — Rouge'}
+              </button>
+            </div>
+          ) : (
+            <button
+              onClick={() => window.open(wine.tech, '_blank')}
+              className="flex items-center gap-2 px-4 py-2 bg-honey-600 text-white rounded-full hover:bg-honey-700 transition-all duration-300 text-sm font-medium"
+            >
+              <Download className="w-4 h-4" />
+              {currentLanguage === 'en' ? 'Technical Sheet' : 'Fiche Technique'}
+            </button>
+          )}
         </div>
       </div>
 
@@ -208,51 +276,21 @@ export default function WineDetail() {
             <h2 className="font-serif text-4xl font-light text-ink text-center mb-12">
               {currentLanguage === 'en' ? 'Tasting Notes' : 'Notes de Dégustation'}
             </h2>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Sight */}
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-honey-100 to-honey-200 rounded-full flex items-center justify-center">
-                  <div className="w-8 h-8 bg-honey-600 rounded-full"></div>
-                </div>
-                <h3 className="font-serif text-xl font-medium text-ink mb-3">
-                  {currentLanguage === 'en' ? 'Sight' : 'Vue'}
-                </h3>
-                <p className="text-stone-600 leading-relaxed font-light">
-                  {content.tastingNotes.sight}
-                </p>
-              </div>
 
-              {/* Nose */}
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-honey-100 to-honey-200 rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8 text-honey-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                </div>
-                <h3 className="font-serif text-xl font-medium text-ink mb-3">
-                  {currentLanguage === 'en' ? 'Nose' : 'Nez'}
+            {content.tastingNotesRouge ? (
+              <>
+                <h3 className="font-serif text-2xl font-light text-honey-600 text-center mb-10 tracking-wide">
+                  {content.name} Blanc
                 </h3>
-                <p className="text-stone-600 leading-relaxed font-light">
-                  {content.tastingNotes.nose}
-                </p>
-              </div>
-
-              {/* Palate */}
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-honey-100 to-honey-200 rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8 text-honey-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.5a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-1.5 1.5H9m0-5a1.5 1.5 0 011.5-1.5H12a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-1.5 1.5H10.5M9 10V9a1.5 1.5 0 011.5-1.5h1M13 16V6" />
-                  </svg>
-                </div>
-                <h3 className="font-serif text-xl font-medium text-ink mb-3">
-                  {currentLanguage === 'en' ? 'Palate' : 'Bouche'}
+                <TastingNotesGrid notes={content.tastingNotes} lang={currentLanguage} />
+                <h3 className="font-serif text-2xl font-light text-honey-600 text-center mt-16 mb-10 tracking-wide">
+                  {content.name} Rouge
                 </h3>
-                <p className="text-stone-600 leading-relaxed font-light">
-                  {content.tastingNotes.palate}
-                </p>
-              </div>
-            </div>
+                <TastingNotesGrid notes={content.tastingNotesRouge} lang={currentLanguage} />
+              </>
+            ) : (
+              <TastingNotesGrid notes={content.tastingNotes} lang={currentLanguage} />
+            )}
           </div>
         </section>
       )}

@@ -27,6 +27,7 @@ export type UIWine = {
   slug: string
   img: string
   tech: string
+  techRouge?: string
   images: string[]
   vintages?: UIVintage[]
   en: any
@@ -48,6 +49,13 @@ function wineFromSanity(w: SanityWine): UIWine {
           palate: w.tastingNotes.palate?.[lang] || w.tastingNotes.palate?.en || '',
         }
       : undefined,
+    tastingNotesRouge: w.tastingNotesRouge
+      ? {
+          sight: w.tastingNotesRouge.sight?.[lang] || w.tastingNotesRouge.sight?.en || '',
+          nose: w.tastingNotesRouge.nose?.[lang] || w.tastingNotesRouge.nose?.en || '',
+          palate: w.tastingNotesRouge.palate?.[lang] || w.tastingNotesRouge.palate?.en || '',
+        }
+      : undefined,
     awards: (w.awards || []).map((a) => ({
       title: a.title?.[lang] || a.title?.en || '',
       score: a.score?.[lang] || a.score?.en || '',
@@ -58,6 +66,7 @@ function wineFromSanity(w: SanityWine): UIWine {
     slug: w.slug,
     img: w.mainImage || w.gallery?.[0] || fb?.img || '',
     tech: w.techSheetUrl || w.vintages?.[0]?.techSheetEn || w.vintages?.[0]?.techSheetFr || fb?.tech || '#',
+    techRouge: w.techSheetUrlRouge || fb?.techRouge || undefined,
     vintages: w.vintages || [],
     images: ((w.gallery && w.gallery.length ? w.gallery : w.mainImage ? [w.mainImage] : fb?.images) || []) as string[],
     en: mk('en'),

@@ -49,6 +49,17 @@ export default defineType({
     }),
     defineField({name: 'note', type: 'localeText'}),
     defineField({name: 'tastingNotes', type: 'tastingNotes'}),
+    defineField({
+      name: 'tastingNotesRouge',
+      title: 'Tasting notes — Rouge (Trigone only)',
+      description: 'Only for wines made in two colours (Trigone): notes for the red. Leave empty otherwise. / Uniquement pour les vins déclinés en deux couleurs (Trigone) : notes du rouge.',
+      type: 'tastingNotes',
+    }),
+    defineField({
+      name: 'techSheetUrlRouge',
+      title: 'Tech sheet URL — Rouge (current vintage, Trigone only)',
+      type: 'url',
+    }),
     defineField({name: 'awards', type: 'array', of: [{type: 'award'}]}),
     defineField({name: 'quote', type: 'localeText'}),
     defineField({name: 'quoteSource', type: 'string'}),

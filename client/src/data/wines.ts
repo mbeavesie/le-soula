@@ -113,15 +113,21 @@ export const wines = [
     slug: 'trigone',
     img: trigoneImage,
     tech: '/tech-sheets/trigone.pdf',
+    techRouge: 'https://cdn.sanity.io/files/9cvkgqfs/production/7688560c34828752848f3d2f48f907d562ab422b.pdf',
     images: [trigoneImage, trigoneImage2, trigoneImage3],
     en: {
       name: 'Trigone',
       vintage: 'Non-Vintage',
-      note: 'A perpetual blend across multiple vintages, textural depth. Savoury complexity, remarkable persistence.',
+      note: 'A perpetual blend across multiple vintages, made in both white and red. Textural depth, savoury complexity, remarkable persistence.',
       tastingNotes: {
         sight: 'Deep golden color with brilliant clarity, reflecting years of patient development',
         nose: 'Honeyed complexity, dried fruits, nuts, and subtle oxidative notes from the perpetual blend',
         palate: 'Extraordinary depth and concentration, with layers of flavor unfolding endlessly'
+      },
+      tastingNotesRouge: {
+        sight: 'Deep ruby with violet reflections, vivid and inviting',
+        nose: 'Dark berries, violets and garrigue, lifted by the pepper of whole-bunch Syrah over crushed granite',
+        palate: 'Supple and full of energy — old-vine Carignan depth, fine tannins, mountain freshness and a long, savoury finish'
       },
       awards: [],
       quote: '',
@@ -130,11 +136,16 @@ export const wines = [
     fr: {
       name: 'Trigone',
       vintage: 'Sans Millésime',
-      note: 'Assemblage perpétuel de plusieurs millésimes, profondeur texturale. Complexité savoureuse, persistance remarquable.',
+      note: 'Assemblage perpétuel de plusieurs millésimes, décliné en blanc et en rouge. Profondeur texturale, complexité savoureuse, persistance remarquable.',
       tastingNotes: {
         sight: 'Couleur dorée profonde d\'une clarté brillante, reflet d\'années de développement patient',
         nose: 'Complexité miellée, fruits secs, noix et notes oxydatives subtiles de l\'assemblage perpétuel',
         palate: 'Profondeur et concentration extraordinaires, avec des couches de saveurs se déployant à l\'infini'
+      },
+      tastingNotesRouge: {
+        sight: 'Rubis profond aux reflets violets, éclatant et engageant',
+        nose: 'Fruits noirs, violette et garrigue, portés par le poivre de la Syrah en grappes entières, sur un fond de granit',
+        palate: 'Souple et plein d\'énergie — la profondeur des vieux carignans, tannins fins, fraîcheur d\'altitude et longue finale savoureuse'
       },
       awards: [],
       quote: '',

@@ -4,12 +4,13 @@ export const winesQuery = `*[_type == "wine"] | order(order asc, name.en asc) {
   "mainImage": mainImage.asset->url,
   "gallery": gallery[].asset->url,
   "techSheetUrl": techSheetUrl,
+  "techSheetUrlRouge": techSheetUrlRouge,
   "vintages": vintages[]{
     label,
     "techSheetFr": techSheetFr.asset->url,
     "techSheetEn": techSheetEn.asset->url
   },
-  tastingNotes, awards
+  tastingNotes, tastingNotesRouge, awards
 }`
 
 export const wineBySlugQuery = `*[_type == "wine" && slug.current == $slug][0] {
@@ -18,12 +19,13 @@ export const wineBySlugQuery = `*[_type == "wine" && slug.current == $slug][0] {
   "mainImage": mainImage.asset->url,
   "gallery": gallery[].asset->url,
   "techSheetUrl": techSheetUrl,
+  "techSheetUrlRouge": techSheetUrlRouge,
   "vintages": vintages[]{
     label,
     "techSheetFr": techSheetFr.asset->url,
     "techSheetEn": techSheetEn.asset->url
   },
-  tastingNotes, awards
+  tastingNotes, tastingNotesRouge, awards
 }`
 
 export const journalPostsQuery = `*[_type == "journalPost"] | order(publishedAt desc) {
@@ -64,8 +66,14 @@ export type SanityWine = {
   mainImage?: string
   gallery?: string[]
   techSheetUrl?: string
+  techSheetUrlRouge?: string
   vintages?: SanityVintage[]
   tastingNotes?: {
+    sight?: LocaleString
+    nose?: LocaleString
+    palate?: LocaleString
+  }
+  tastingNotesRouge?: {
     sight?: LocaleString
     nose?: LocaleString
     palate?: LocaleString
